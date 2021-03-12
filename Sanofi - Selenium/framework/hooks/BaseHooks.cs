@@ -3,6 +3,7 @@ using AventStack.ExtentReports.Gherkin.Model;
 using AventStack.ExtentReports.Reporter;
 using Sanofi___Selenium.framework.core;
 using Sanofi___Selenium.framework.steps;
+using System;
 using System.Collections.Generic;
 using TechTalk.SpecFlow;
 
@@ -19,7 +20,7 @@ namespace Sanofi___Selenium.core.hooks
 		[BeforeTestRun]
 		public static void BeforeTestRun()
 		{
-			var HtmlReporter = new ExtentHtmlReporter(@"D:\automação\sanofi\Sanofi\TestResults\Report.txt");
+			var HtmlReporter = new ExtentHtmlReporter(AppDomain.CurrentDomain.BaseDirectory.ToString());
 			HtmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
 			Extent = new ExtentReports();
 			Extent.AttachReporter(HtmlReporter);
