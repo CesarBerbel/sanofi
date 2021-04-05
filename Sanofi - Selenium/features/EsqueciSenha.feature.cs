@@ -328,7 +328,7 @@ testRunner.Given("que eu clique em Não tenho mais acesso a este email", ((strin
 testRunner.And("seja exibido o final do numero do telefone \"2222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 51
-testRunner.When("eu preencho o campo Celular com \"22222222222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("eu preencho o campo Celular com \"2222222222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 52
 testRunner.When("eu preencho o campo Novo email com \"dentista@servidor.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
@@ -344,83 +344,6 @@ testRunner.Then("eu devo ver a tela de envio de senha", ((string)(null)), ((Tech
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Tentar alterar email de recuperacao de senha utilizando Email invalido")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "EsqueciSenha")]
-        public virtual void TentarAlterarEmailDeRecuperacaoDeSenhaUtilizandoEmailInvalido()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Tentar alterar email de recuperacao de senha utilizando Email invalido", null, tagsOfScenario, argumentsOfScenario);
-#line 56
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 57
-testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
-#line hidden
-#line 58
-testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 59
-testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 60
-testRunner.When("clico em Esqueceu sua senha?", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line hidden
-#line 61
-testRunner.And("escolho tipo de HCP \"Dentista (CRO)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 62
-testRunner.And("escolho o Estado \"RR\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 63
-testRunner.And("preencho o campo Número do registro com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 64
-testRunner.And("clico em Prosseguir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 65
-testRunner.Then("eu devo ver a tela de envio de senha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
-#line hidden
-#line 66
-testRunner.Given("que eu clique em Não tenho mais acesso a este email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
-#line hidden
-#line 67
-testRunner.And("seja exibido o final do numero do telefone \"2222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 68
-testRunner.When("eu preencho o campo Celular com \"22222222222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line hidden
-#line 69
-testRunner.When("eu preencho o campo Novo email com \"abc123.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line hidden
-#line 70
-testRunner.And("clico em Habilitar novo email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 71
-testRunner.Then("devo ver as mensagens de erro do Login \"Email inválido\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Tentar alterar email de recuperacao de senha utilizando Email ja existente")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "EsqueciSenha")]
         public virtual void TentarAlterarEmailDeRecuperacaoDeSenhaUtilizandoEmailJaExistente()
@@ -428,7 +351,7 @@ testRunner.Then("devo ver as mensagens de erro do Login \"Email inválido\"", ((
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Tentar alterar email de recuperacao de senha utilizando Email ja existente", null, tagsOfScenario, argumentsOfScenario);
-#line 73
+#line 74
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -448,49 +371,49 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 74
+#line 75
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 75
+#line 76
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 76
+#line 77
 testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 77
+#line 78
 testRunner.When("clico em Esqueceu sua senha?", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 78
+#line 79
 testRunner.And("escolho tipo de HCP \"Dentista (CRO)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 79
+#line 80
 testRunner.And("escolho o Estado \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 80
+#line 81
 testRunner.And("preencho o campo Número do registro com \"21660\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 81
+#line 82
 testRunner.And("clico em Prosseguir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 82
+#line 83
 testRunner.Then("eu devo ver a tela de envio de senha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 83
+#line 84
 testRunner.Given("que eu clique em Não tenho mais acesso a este email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 84
+#line 85
 testRunner.And("seja exibido o final do numero do telefone \"2222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 85
+#line 86
 testRunner.When("eu preencho o campo Celular com \"22222222222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 86
+#line 87
 testRunner.When("eu preencho o campo Novo email com \"maria@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 87
+#line 88
 testRunner.And("clico em Habilitar novo email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 88
+#line 89
 testRunner.Then("devo ver as mensagens de erro do Login \"Já existe um usuário com este e-mail\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
@@ -505,7 +428,7 @@ testRunner.Then("devo ver as mensagens de erro do Login \"Já existe um usuário
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verificar obrigatoriedade dos campos ao Recuperar senha", null, tagsOfScenario, argumentsOfScenario);
-#line 90
+#line 91
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -525,22 +448,22 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 91
+#line 92
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 92
+#line 93
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 93
+#line 94
 testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 94
+#line 95
 testRunner.When("clico em Esqueceu sua senha?", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 95
+#line 96
 testRunner.And("clico em Prosseguir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 96
+#line 97
 testRunner.Then("devo ver as mensagens de erro do Login \"Escolher Estado,Favor informar seu número" +
                         " de registro\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden

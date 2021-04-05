@@ -65,6 +65,6 @@ namespace Sanofi___Selenium.pages
 
 		public By CadastroDepois = By.Id("sf-create-account-after");
 
-		public By IconeFechar = By.XPath("//span[@class='icon icon-close icon--hover-fade c-base-modal-content__icon']");
+		public By IconeFechar = By.XPath("//span[@class='icon icon-close icon--hover-fade c-base-modal-content__icon']");		                                                 
 	}
 }

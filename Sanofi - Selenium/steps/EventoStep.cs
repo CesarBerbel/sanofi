@@ -24,7 +24,8 @@ namespace Sanofi___Selenium.steps
 		[Then(@"eu visualizo o evento ""(.*)""")]
 		public void EntaoEuVisualizoOEvento(string url)
 		{
-			App.CheckAtualPage(url);
+			Asserts.VerificarUrl(url);
+			//App.CheckAtualPage(url);
 		}
 
 		[When(@"eu acesso a campanha ""(.*)""")]
@@ -66,7 +67,7 @@ namespace Sanofi___Selenium.steps
 		[When(@"Eu clico em fechar")]
 		public void QuandoEuClicoEmFechar()
 		{
-			App.Click(BasePage.LoginModal.IconeFechar);
+			App.JClick(BasePage.LoginModal.IconeFechar);
 		}
 
 		[Then(@"devo ver o botão de ""(.*)""")]
@@ -88,7 +89,7 @@ namespace Sanofi___Selenium.steps
 		[When(@"escolho Apple")]
 		public void QuandoEscolhoApple()
 		{
-			App.JClick(BasePage.EventoPage.BotaoAppleHero);
+			App.Click(BasePage.EventoPage.BotaoAppleHero);
 		}
 
 		[Then(@"o botão deve ter o texto ""(.*)""")]
@@ -113,7 +114,7 @@ namespace Sanofi___Selenium.steps
         [Then(@"não devo ver o botão de Adicionar a meu calendário")]
         public void EntaoNaoDevoVerOBotaoDeAdicionarAMeuCalendario()
         {
-            Assert.IsTrue(BrowserFactory.Driver.FindElements(By.XPath("//button[@class='c-button-schedule c-button-schedule--white']")).Count == 0, "Botão visível na página");
+            Assert.IsTrue(BrowserFactory.Driver.FindElement(By.XPath("//button[@class='c-button-schedule c-button-schedule--white']")).Text  == "Inscreva-se", "Botão visível na página");
         }
 
         [When(@"eu clico em ""(.*)""")]

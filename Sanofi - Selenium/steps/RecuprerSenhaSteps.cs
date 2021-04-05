@@ -57,9 +57,7 @@ namespace Sanofi___Selenium.steps
         {
 			BrowserFactory.Driver.FindElement(BasePage.LoginModal.ConfirmaTelefone).Clear();
 			App.EnterTextInto(BasePage.LoginModal.ConfirmaTelefone, tel);
-			BrowserFactory.Driver.FindElement(BasePage.LoginModal.ConfirmaTelefone).SendKeys(Keys.Tab);
-			BrowserFactory.Driver.FindElement(BasePage.LoginModal.ConfirmaTelefone).SendKeys(Keys.Tab);
-			BrowserFactory.Driver.FindElement(BasePage.LoginModal.ConfirmaTelefone).SendKeys(Keys.Tab);
+			App.EnterTextInto(BasePage.LoginModal.ConfirmaTelefone, "2");
 		}
 
 		[When(@"eu preencho o campo Novo email com ""(.*)""")]

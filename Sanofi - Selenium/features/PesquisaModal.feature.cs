@@ -92,55 +92,6 @@ namespace Sanofi___Selenium.Features
         {
             testRunner.CollectScenarioErrors();
         }
-        
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Sair da Pesquisa sem responder as questões")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Pesquisa de Satisfacão")]
-        public virtual void SairDaPesquisaSemResponderAsQuestoes()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Sair da Pesquisa sem responder as questões", null, tagsOfScenario, argumentsOfScenario);
-#line 7
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 8
-testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
-#line hidden
-#line 9
-testRunner.When("eu acesso o evento \"https://stg-cd.sanoficonecta.com.br/eventos/evento-zinpass-ez" +
-                        "e-2021\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line hidden
-#line 10
-testRunner.Then("eu devo ver o modal de Pesquisa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
-#line hidden
-#line 11
-testRunner.When("eu Fecho a pesquisa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line hidden
-#line 12
-testRunner.Then("eu visualizo o evento \"https://stg-cd.sanoficonecta.com.br/eventos/evento-zinpass" +
-                        "-eze-2021\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
     }
 }
 #pragma warning restore

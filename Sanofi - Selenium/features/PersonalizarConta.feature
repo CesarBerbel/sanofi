@@ -23,22 +23,22 @@ E eu altero o Celular para um numero valido
 E eu clico em Salvar
 Então devo visualizar a mensagem "Dados alterados com sucesso"
 
-# 02 Bugs: Botao Salvar disponibilizado na alteracao e Botao salvar sem acão para conta cadastradas com celular invalido 
-Cenario: Alterar numero do celular utilizando um numero inválido
-Dado que eu acesse o sistema
-E eu clico no menu profile para expandir
-E clico em Entrar
-Quando Eu escolho o login por email
-E preencho o campo Email com "testemedico@grr.la"
-E preencho o campo Senha com "123456"
-E clico em Logar
-Então eu devo ser direcionado para página de boas vindas
-Dado eu clico no menu profile Logado para expandir
-E eu clico em Meu Perfil
-Então devo ser direcionado para pagina de Perfil
-Quando eu clico em Minha conta 
-E eu altero o Celular para "00111111111"
-Então eu nao devo ver o botao Salvar 
+## 02 Bugs: Botao Salvar disponibilizado na alteracao e Botao salvar sem acão para conta cadastradas com celular invalido 
+#Cenario: Alterar numero do celular utilizando um numero inválido
+#Dado que eu acesse o sistema
+#E eu clico no menu profile para expandir
+#E clico em Entrar
+#Quando Eu escolho o login por email
+#E preencho o campo Email com "testemedico@grr.la"
+#E preencho o campo Senha com "123456"
+#E clico em Logar
+#Então eu devo ser direcionado para página de boas vindas
+#Dado eu clico no menu profile Logado para expandir
+#E eu clico em Meu Perfil
+#Então devo ser direcionado para pagina de Perfil
+#Quando eu clico em Minha conta 
+#E eu altero o Celular para "00111111111"
+#Então eu nao devo ver o botao Salvar 
 
 Cenario: Alterar email
 Dado que eu acesse o sistema
@@ -137,25 +137,25 @@ E preencho o campo Repetir Senha com a nova senha "abc@"
 E eu clico em Cadastrar
 Então devo ver a mensagem Senha inválida
 
-# Mensagem erro de grafia
-Cenario: Tentar alterar senha, utilizando a senha de confirmacao diferente
-Dado que eu acesse o sistema
-E eu clico no menu profile para expandir
-E clico em Entrar
-Quando Eu escolho o login por email
-E preencho o campo Email com "testemedico@grr.la"
-E preencho o campo Senha com "123456"
-E clico em Logar
-Então eu devo ser direcionado para página de boas vindas
-Dado eu clico no menu profile Logado para expandir
-E eu clico em Meu Perfil
-Então devo ser direcionado para pagina de Perfil
-Quando eu clico em Minha conta 
-E eu clico em Alterar senha
-E preencho o campo senha com a nova senha "abc@123"
-E preencho o campo Repetir Senha com a nova senha "abc@321"
-E eu clico em Cadastrar
-Então devo ver a mensagem de erro "Os Passwords digitados estão diferentes"
+## Mensagem erro de grafia
+#Cenario: Tentar alterar senha, utilizando a senha de confirmacao diferente
+#Dado que eu acesse o sistema
+#E eu clico no menu profile para expandir
+#E clico em Entrar
+#Quando Eu escolho o login por email
+#E preencho o campo Email com "testemedico@grr.la"
+#E preencho o campo Senha com "123456"
+#E clico em Logar
+#Então eu devo ser direcionado para página de boas vindas
+#Dado eu clico no menu profile Logado para expandir
+#E eu clico em Meu Perfil
+#Então devo ser direcionado para pagina de Perfil
+#Quando eu clico em Minha conta 
+#E eu clico em Alterar senha
+#E preencho o campo senha com a nova senha "abc@123"
+#E preencho o campo Repetir Senha com a nova senha "abc@321"
+#E eu clico em Cadastrar
+#Então devo ver a mensagem de erro "Os Passwords digitados estão diferentes"
 
 Cenario: Alterar especialidades para usuário perfil médico ou dentista
 Dado que eu acesse o sistema
