@@ -53,6 +53,7 @@ Quando eu preencho o campo Novo email com "dentista@servidor.com"
 E clico em Habilitar novo email 
 Entao eu devo ver a tela de envio de senha
 
+# Bug: Realiza a alteração, mesmo com email inválido
 Cenario: Tentar alterar email de recuperacao de senha utilizando Email invalido
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir

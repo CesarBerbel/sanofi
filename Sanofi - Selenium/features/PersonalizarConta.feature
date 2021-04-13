@@ -137,7 +137,7 @@ E preencho o campo Repetir Senha com a nova senha "abc@"
 E eu clico em Cadastrar
 Então devo ver a mensagem Senha inválida
 
-# Mensagem erro de grafia
+# Bug: Mensagem erro de grafia
 Cenario: Tentar alterar senha, utilizando a senha de confirmacao diferente
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
@@ -157,12 +157,13 @@ E preencho o campo Repetir Senha com a nova senha "abc@321"
 E eu clico em Cadastrar
 Então devo ver a mensagem de erro "Os Passwords digitados estão diferentes"
 
+
 Cenario: Alterar especialidades para usuário perfil médico ou dentista
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 E clico em Entrar
 Quando Eu escolho o login por email
-E preencho o campo Email com "testemedico@grr.la"
+E preencho o campo Email com "medico01@teste.com"
 E preencho o campo Senha com "123456"
 E clico em Logar
 Então eu devo ser direcionado para página de boas vindas

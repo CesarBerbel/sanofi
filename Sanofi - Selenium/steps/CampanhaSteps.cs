@@ -58,7 +58,7 @@ namespace Sanofi___Selenium.steps
 		[Then(@"devo ver a mensagem de salvamento ""(.*)""")]
 		public void EntaoDevoVerAMensagemDeSalvamento(string msg)
 		{
-			App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("//div[@class='c-drawer c-drawer--fit-content']")));
+			//App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("//div[@class='c-drawer c-drawer--fit-content']")));
 
 			App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("//div[@class='c-drawer c-drawer--hidden']")));
 		}

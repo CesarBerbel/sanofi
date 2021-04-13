@@ -755,7 +755,7 @@ testRunner.Then("devo ver a mensagem de erro \"Os Passwords digitados estão dif
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alterar especialidades para usuário perfil médico ou dentista", null, tagsOfScenario, argumentsOfScenario);
-#line 160
+#line 161
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -775,64 +775,64 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 161
+#line 162
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 162
+#line 163
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 163
+#line 164
 testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 164
+#line 165
 testRunner.When("Eu escolho o login por email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 165
-testRunner.And("preencho o campo Email com \"testemedico@grr.la\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
 #line 166
-testRunner.And("preencho o campo Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("preencho o campo Email com \"medico01@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 167
-testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("preencho o campo Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 168
-testRunner.Then("eu devo ser direcionado para página de boas vindas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 169
-testRunner.Given("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+testRunner.Then("eu devo ser direcionado para página de boas vindas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
 #line 170
-testRunner.And("eu clico em Meu Perfil", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.Given("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 171
-testRunner.Then("devo ser direcionado para pagina de Perfil", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+testRunner.And("eu clico em Meu Perfil", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 172
-testRunner.When("eu clico em Especialidades e Interesses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.Then("devo ser direcionado para pagina de Perfil", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
 #line 173
-testRunner.And("eu escolho a Especialidade primária \"Acupuntura\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.When("eu clico em Especialidades e Interesses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 174
-testRunner.And("eu escolho a Especialidade secundária \"Cardiologia\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("eu escolho a Especialidade primária \"Acupuntura\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 175
-testRunner.And("eu clico em Salvar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("eu escolho a Especialidade secundária \"Cardiologia\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 176
-testRunner.Then("devo visualizar a mensagem \"Dados alterados com sucesso\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
-#line hidden
-#line 177
-testRunner.When("eu escolho a Especialidade primária \"Angiologia\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
-#line hidden
-#line 178
-testRunner.And("eu escolho a Especialidade secundária \"Cirurgia geral\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 179
 testRunner.And("eu clico em Salvar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
+#line 177
+testRunner.Then("devo visualizar a mensagem \"Dados alterados com sucesso\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+#line hidden
+#line 178
+testRunner.When("eu escolho a Especialidade primária \"Angiologia\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 179
+testRunner.And("eu escolho a Especialidade secundária \"Cirurgia geral\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
 #line 180
+testRunner.And("eu clico em Salvar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 181
 testRunner.Then("devo visualizar a mensagem \"Dados alterados com sucesso\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
@@ -847,7 +847,7 @@ testRunner.Then("devo visualizar a mensagem \"Dados alterados com sucesso\"", ((
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adicionar Interesse e Especialidade", null, tagsOfScenario, argumentsOfScenario);
-#line 183
+#line 184
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -867,81 +867,81 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 184
+#line 185
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 185
+#line 186
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 186
+#line 187
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 187
+#line 188
 testRunner.When("escolho tipo de HCP \"Dentista (CRO)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 188
+#line 189
 testRunner.And("escolho o Estado \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 189
+#line 190
 testRunner.And("preencho o campo Número do registro com registro aleatório", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 190
+#line 191
 testRunner.And("preencho o Email com email aleatório", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 191
+#line 192
 testRunner.And("marco a opcao Li e concordo com os Termos e Condições.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 192
+#line 193
 testRunner.And("eu clico em Continuar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 193
+#line 194
 testRunner.When("Eu preencho o campo Nome com \"Dentista\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 194
+#line 195
 testRunner.And("preencho o campo Sobrenome com \"Automacao\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 195
+#line 196
 testRunner.And("eu preencho o Celular com \"79123456789\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 196
+#line 197
 testRunner.And("preencho o campo Adicionar Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 197
+#line 198
 testRunner.And("preencho o campo Repetir Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 198
+#line 199
 testRunner.And("clico em Finalizar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 199
+#line 200
 testRunner.Then("devo ver a mensagem de conta criada com sucesso \"Sua conta foi criada com sucesso" +
                         "!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 200
+#line 201
 testRunner.When("clico em Personalizar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 201
+#line 202
 testRunner.Then("devo ser direcionado para pagina de Perfil", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 202
+#line 203
 testRunner.When("eu clico em Especialidades e Interesses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 203
+#line 204
 testRunner.Then("devo ver a Mensagem \"Finalize a personalização da sua conta. Selecione uma especi" +
                         "alidade primária e selecione um ou mais interesses.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 204
+#line 205
 testRunner.When("eu escolho a Especialidade primária \"Endodontia\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 205
+#line 206
 testRunner.And("eu escolho a Especialidade secundária \"Pediatria\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 206
+#line 207
 testRunner.And("seleciono em interesses \"Amostras de Medicamentos\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 207
+#line 208
 testRunner.And("eu clico em Salvar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 208
+#line 209
 testRunner.Then("devo visualizar a mensagem \"Dados alterados com sucesso\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
@@ -956,7 +956,7 @@ testRunner.Then("devo visualizar a mensagem \"Dados alterados com sucesso\"", ((
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alterar interesses para usuário com perfil farmaceutico", null, tagsOfScenario, argumentsOfScenario);
-#line 211
+#line 212
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -976,61 +976,61 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 212
+#line 213
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 213
+#line 214
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 214
+#line 215
 testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 215
+#line 216
 testRunner.When("Eu escolho o login por email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 216
+#line 217
 testRunner.And("preencho o campo Email com \"maria@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 217
+#line 218
 testRunner.And("preencho o campo Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 218
+#line 219
 testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 219
+#line 220
 testRunner.Then("eu devo ser direcionado para página de boas vindas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 220
+#line 221
 testRunner.Given("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 221
+#line 222
 testRunner.And("eu clico em Meu Perfil", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 222
+#line 223
 testRunner.Then("devo ser direcionado para pagina de Perfil", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 223
+#line 224
 testRunner.When("eu clico Interesses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 224
+#line 225
 testRunner.And("seleciono em interesses \"Artigos Científicos\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 225
-testRunner.And("eu clico em Salvar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
 #line 226
-testRunner.Then("devo visualizar a mensagem \"Dados alterados com sucesso\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+testRunner.And("eu clico em Salvar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 227
-testRunner.When("seleciono em interesses \"Artigos Científicos\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.Then("devo visualizar a mensagem \"Dados alterados com sucesso\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
 #line 228
-testRunner.And("seleciono em interesses \"Aulas Médicas\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.When("seleciono em interesses \"Artigos Científicos\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 229
-testRunner.And("eu clico em Salvar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("seleciono em interesses \"Aulas Médicas\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 230
+testRunner.And("eu clico em Salvar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 231
 testRunner.Then("devo visualizar a mensagem \"Dados alterados com sucesso\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }

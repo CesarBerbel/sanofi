@@ -43,12 +43,12 @@ namespace Sanofi___Selenium.steps
 			//Asserts.VerificarString(texto, msg);
 		}
 
-		[Then(@"devo ver a mensagem do evento exclusivo ""(.*)""")]
-		public void EntaoDevoVerAMensagemDoEventoExclusivo(string msg)
-		{
-			string texto = App.GetTextBy(BasePage.EventoPage.Mensagem);
-			Asserts.VerificarString(texto, msg);
-		}
+		//[Then(@"devo ver a mensagem do evento exclusivo ""(.*)""")]
+		//public void EntaoDevoVerAMensagemDoEventoExclusivo(string msg)
+		//{
+		//	string texto = App.GetTextBy(BasePage.EventoPage.Mensagem);
+		//	Asserts.VerificarString(texto, msg);
+		//}
 
 
 		[When(@"eu clico em Compartilhar Evento")]
@@ -63,13 +63,22 @@ namespace Sanofi___Selenium.steps
 			App.JClick(BasePage.EventoPage.Salvar);
 		}
 
-		[When(@"Eu clico em fechar")]
+        [Given(@"que eu fecho o modal")]
+        public void DadoQueEuFechoOModal()
+        {
+            App.Click(BasePage.LoginModal.IconeFechar);
+
+
+        }
+
+        [When(@"Eu clico em fechar")]
 		public void QuandoEuClicoEmFechar()
 		{
-			App.Click(BasePage.LoginModal.IconeFechar);
+			App.Click(BasePage.LoginModal.FecharModal);
 		}
 
-		[Then(@"devo ver o botão de ""(.*)""")]
+        
+        [Then(@"devo ver o botão de ""(.*)""")]
 		public void EntaoDevoVerOBotaoDe(string label)
 		{
             //implementada Thread por causa da lentidão do login
@@ -101,7 +110,9 @@ namespace Sanofi___Selenium.steps
 		[When(@"clico em Salvar no calendário dentro da palestra")]
 		public void QuandoClicoEmSalvarNoCalendarioDentroDaPalestra()
 		{
-			App.JClick(BasePage.EventoPage.LinkCalendario);
+            //implementada Thread por causa da lentidão do login
+            Thread.Sleep(TimeSpan.FromSeconds(3));
+            App.JClick(BasePage.EventoPage.LinkCalendario);
 		}
 
 		[When(@"escolho Apple dentro da palestra")]
