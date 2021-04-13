@@ -18,14 +18,13 @@ namespace Sanofi___Selenium.framework.core
 		public void Initalize()
 		{
 			BrowserFactory.InitBrowser("BrowserStack");
-			_espera = new WebDriverWait(BrowserFactory.Driver, TimeSpan.FromSeconds(30));	
+			_espera = new WebDriverWait(BrowserFactory.Driver, TimeSpan.FromSeconds(60));	
 		}
 
 		public void GoTo(string url, bool preLogin = true)
 		{
 			BrowserFactory.LoadApplication(url);
-			BasePage.PreLoginPage.DoPreLogin(preLogin);
-			
+			BasePage.PreLoginPage.DoPreLogin(preLogin);			
 		}
 
 		public void Click(By by)
@@ -38,7 +37,7 @@ namespace Sanofi___Selenium.framework.core
 
 		public void JClick(By by, bool esperar = true)
 		{
-			Thread.Sleep(TimeSpan.FromSeconds(2));
+			Thread.Sleep(TimeSpan.FromSeconds(3));
 			if (esperar)
 			{
 				_meliante = _espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(by));
@@ -47,7 +46,7 @@ namespace Sanofi___Selenium.framework.core
 
 			Thread.Sleep(TimeSpan.FromSeconds(2));
 			IJavaScriptExecutor executor = (IJavaScriptExecutor)BrowserFactory.Driver;
-			executor.ExecuteScript("arguments[0].click();", _meliante);			
+			executor.ExecuteScript("arguments[0].click();", _meliante);		
 		}
 
 		public void EnterTextInto(By by, string text, bool esperar = true)

@@ -38,7 +38,9 @@ namespace Sanofi___Selenium.framework.core
 
 
 				case "Chrome":
-						driver = new ChromeDriver();
+						ChromeOptions options = new ChromeOptions();
+					//options.AddArguments("--headless");
+					driver = new ChromeDriver(options);
 					break;
 				case "BrowserStack":
 					local = new Local();
@@ -78,8 +80,8 @@ namespace Sanofi___Selenium.framework.core
 			if (local != null) {
 				local.stop();
 			}
-			Driver.Close();
-			Driver.Quit();
+			//Driver.Close();
+			//Driver.Quit();
 		}
 	}
 }
