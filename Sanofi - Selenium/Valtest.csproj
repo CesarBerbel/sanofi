@@ -456,6 +456,7 @@
     <Compile Include="pages\EventoPage.cs" />
     <Compile Include="pages\ArtigoPage.cs" />
     <Compile Include="pages\CampanhasPage.cs" />
+    <Compile Include="pages\CriarContaPage.cs" />
     <Compile Include="pages\LoginModal.cs" />
     <Compile Include="pages\PersonalizarContaPage.cs" />
     <Compile Include="pages\PesquisaModalPage.cs" />

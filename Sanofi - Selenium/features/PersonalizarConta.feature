@@ -137,7 +137,7 @@ E preencho o campo Repetir Senha com a nova senha "abc@"
 E eu clico em Cadastrar
 Então devo ver a mensagem Senha inválida
 
-# Bug: Mensagem erro de grafia
+# CORRIGIDO!
 Cenario: Tentar alterar senha, utilizando a senha de confirmacao diferente
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
@@ -155,7 +155,7 @@ E eu clico em Alterar senha
 E preencho o campo senha com a nova senha "abc@123"
 E preencho o campo Repetir Senha com a nova senha "abc@321"
 E eu clico em Cadastrar
-Então devo ver a mensagem de erro "Os Passwords digitados estão diferentes"
+Então devo ver a mensagem de erro "Os Passwords digitados estão diferentes."
 
 
 Cenario: Alterar especialidades para usuário perfil médico ou dentista

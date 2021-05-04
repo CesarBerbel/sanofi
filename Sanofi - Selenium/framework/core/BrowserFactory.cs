@@ -80,8 +80,8 @@ namespace Sanofi___Selenium.framework.core
 			if (local != null) {
 				local.stop();
 			}
-			//Driver.Close();
-			//Driver.Quit();
+			Driver.Close();
+			Driver.Quit();
 		}
 	}
 }

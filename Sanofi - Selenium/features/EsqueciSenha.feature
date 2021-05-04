@@ -1,8 +1,9 @@
 ﻿#language: pt-BR
 Funcionalidade: EsqueciSenha
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+Para garantir que a recuperacao de senha funciona
+Eu, como usuário já cadastrado
+Desejo recuperar minha senha para continuar tendo acesso ao sistema.
+
 
 Cenario: Recuperar Senha
 Dado que eu acesse o sistema

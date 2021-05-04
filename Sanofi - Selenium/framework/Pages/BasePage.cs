@@ -58,5 +58,10 @@ namespace Sanofi___Selenium.framework.Pages
 		{
 			get { return GetPage<PesquisaModalPage>(); }
 		}
-	}
+
+        public static CriarConta CriarContaPage
+        {
+            get { return GetPage<CriarConta>(); }
+        }
+    }
 }
