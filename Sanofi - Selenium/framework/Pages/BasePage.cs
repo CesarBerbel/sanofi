@@ -49,9 +49,9 @@ namespace Sanofi___Selenium.framework.Pages
 			get { return GetPage<PersonalizarContaPage>(); }
 		}
 
-		public static ConfigurarCookiesPage ConfigurarCookies
+		public static CookiesPage Cookies
 		{
-			get { return GetPage<ConfigurarCookiesPage>(); }
+			get { return GetPage<CookiesPage>(); }
 		}
 
 		public static PesquisaModalPage PesquisaModal

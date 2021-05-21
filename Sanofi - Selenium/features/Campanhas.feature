@@ -70,7 +70,7 @@ Dado eu clico no menu profile para expandir em Campanha
 Quando eu clico em Itens Salvos
 Então eu devo ser direcionado para página de Favoritos
 Quando eu clico em Remover item dos favoritos
-#Então devo ver a mensagem de sucesso "Campanha removida da sua área pessoal"
+Então devo ver a mensagem de salvamento "Item removido da sua área pessoal"
 
 Cenario: Compartilhar Campanha nas redes sociais e Copiar Link 
 Dado que eu acesse o sistema

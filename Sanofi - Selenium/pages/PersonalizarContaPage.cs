@@ -30,8 +30,6 @@ namespace Sanofi___Selenium.pages
 
         public By EspecialidadeSecundaria = By.Id("expertisesecondary");
 
-        public By Interesses = By.XPath("//span[@class='c-my-profile__section--error']");
-
         public By BtnPersonalizar = By.XPath("//button[@class='c-base-modal-content__button']");
 
 

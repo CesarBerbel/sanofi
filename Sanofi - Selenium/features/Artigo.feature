@@ -52,6 +52,8 @@ Dado eu clico no menu profile Logado para expandir
 Quando eu clico em Itens Salvos
 Então eu devo ser direcionado para página de Favoritos
 Quando eu clico em Remover item dos favoritos
+Então devo ver a mensagem de salvamento "Item removido da sua área pessoal"
+
 
 Cenario: Compartilhar Artigo nas redes sociais e Copiar link
 Dado que eu acesse o sistema

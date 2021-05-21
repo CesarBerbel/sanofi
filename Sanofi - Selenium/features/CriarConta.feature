@@ -22,8 +22,6 @@ E preencho o campo Repetir Senha com "123456"
 E clico em Finalizar
 Entao devo ver a mensagem de conta criada com sucesso "Sua conta foi criada com sucesso!"
 
-
-
 Cenario: Tentar Criar Conta utilizando Número do registro ja cadastrado
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
@@ -62,7 +60,7 @@ E preencho o campo do registro com "1234567"
 E preencho o Email com "abc12345@testing.com"
 E marco a opcao Li e concordo com os Termos e Condições.
 E eu clico em Continuar
-Entao devo ver as mensagens de erro do Login "CRM invalido no CFM,"
+Entao devo ver as mensagens de erro do Login "CRM inválido no CFM,"
 
 Cenario: Verificar obrigatoriedade dos campos ao criar conta
 Dado que eu acesse o sistema
@@ -72,6 +70,7 @@ Quando eu clico em Continuar
 Entao devo ver as mensagens de erro do Login "Escolher Estado,Favor informar seu número de registro,Email inválido,Marcar o aceite,"
 
 
+#BUG. Cenário novo que falhou. Precisa de correção de DEV
 Cenario: Tentar criar conta com Celular invalido
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
@@ -84,7 +83,7 @@ E marco a opcao Li e concordo com os Termos e Condições.
 E eu clico em Continuar
 E Eu preencho o campo Nome com "Doctor Angry"
 E preencho o campo Sobrenome com "Birds"
-E eu preencho o Celular com "111111"
+E eu preencho o Celular com "00000"
 E preencho o campo Adicionar Senha com "123456"
 E preencho o campo Repetir Senha com "123456"
 E clico em Finalizar

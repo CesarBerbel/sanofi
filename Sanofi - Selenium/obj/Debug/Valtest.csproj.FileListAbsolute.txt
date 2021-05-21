@@ -875,8 +875,8 @@ C:\Users\ana.bispo\Source\Repos\sanofi\Sanofi - Selenium\bin\Debug\TechTalk.Spec
 C:\Users\ana.bispo\Source\Repos\sanofi\Sanofi - Selenium\bin\Debug\Utf8Json.xml
 C:\Users\ana.bispo\Source\Repos\sanofi\Sanofi - Selenium\bin\Debug\WebDriver.xml
 C:\Users\ana.bispo\Source\Repos\sanofi\Sanofi - Selenium\bin\Debug\WebDriver.Support.xml
+C:\Users\ana.bispo\Source\Repos\sanofi\Sanofi - Selenium\obj\Debug\Valtest.csprojAssemblyReference.cache
 C:\Users\ana.bispo\Source\Repos\sanofi\Sanofi - Selenium\obj\Debug\Valtest.csproj.CoreCompileInputs.cache
 C:\Users\ana.bispo\Source\Repos\sanofi\Sanofi - Selenium\obj\Debug\Valtest.csproj.CopyComplete
 C:\Users\ana.bispo\Source\Repos\sanofi\Sanofi - Selenium\obj\Debug\Sanofi - Selenium.dll
 C:\Users\ana.bispo\Source\Repos\sanofi\Sanofi - Selenium\obj\Debug\Sanofi - Selenium.pdb
-C:\Users\ana.bispo\Source\Repos\sanofi\Sanofi - Selenium\obj\Debug\Valtest.csprojAssemblyReference.cache

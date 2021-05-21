@@ -9,12 +9,12 @@ using TechTalk.SpecFlow;
 namespace Sanofi___Selenium.steps
 {
     [Binding]
-    public class ConfigurarCookiesSteps : BaseSteps
+    public class CookiesSteps : BaseSteps
     {
         [When(@"eu clico em Rejeitar Todos")]
         public void QuandoEuClicoEmRejeitarTodos()
         {
-            App.JClick(BasePage.ConfigurarCookies.RejeitarTodos);
+            App.JClick(BasePage.Cookies.RejeitarTodos);
         }
         
         [Then(@"eu devo ver as configurações de cookies")]

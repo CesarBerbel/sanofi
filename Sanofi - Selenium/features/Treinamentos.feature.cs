@@ -20,7 +20,7 @@ namespace Sanofi___Selenium.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.5.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class PesquisaFeature
+    public partial class TreinamentosFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -29,7 +29,7 @@ namespace Sanofi___Selenium.Features
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "PesquisaModal.feature"
+#line 1 "Treinamentos.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -48,9 +48,8 @@ namespace Sanofi___Selenium.Features
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-BR"), "features", "Pesquisa", "               Para ajudar na avaliacão da experiência do usuário no portal Sanof" +
-                    "i Conecta \r\n               Eu, como usuário do sistema\r\n               Devo resp" +
-                    "onder a pesquisa de satisfacão", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-BR"), "features", "Treinamentos", "\t            Como usuario do sistema\r\n\t\t\t\tPreciso ter acesso aos Treinamentos\r\n\t\t" +
+                    "\t\tPara assistir os cursos", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,9 +64,9 @@ namespace Sanofi___Selenium.Features
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "Pesquisa")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "Treinamentos")))
             {
-                global::Sanofi___Selenium.Features.PesquisaFeature.FeatureSetup(null);
+                global::Sanofi___Selenium.Features.TreinamentosFeature.FeatureSetup(null);
             }
         }
         

@@ -3,7 +3,7 @@ using SeleniumExtras.PageObjects;
 
 namespace Sanofi___Selenium.pages
 {
-	public class ConfigurarCookiesPage
+	public class CookiesPage
     {
 		
 		public By AceitarTodos = By.Id("onetrust-accept-btn-handler");

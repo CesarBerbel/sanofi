@@ -402,10 +402,10 @@ testRunner.Then("eu devo ver a tela de envio de senha", ((string)(null)), ((Tech
 testRunner.Given("que eu clique em Não tenho mais acesso a este email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
 #line 69
-testRunner.And("seja exibido o final do numero do telefone \"2222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("seja exibido o final do numero do telefone \"5507\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 70
-testRunner.When("eu preencho o campo Celular com \"22222222222\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("eu preencho o campo Celular com \"71987165507\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 71
 testRunner.When("eu preencho o campo Novo email com \"abc123.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");

@@ -20,7 +20,7 @@ namespace Sanofi___Selenium.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.5.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class ConfigurarCookiesFeature
+    public partial class CookiesFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -29,7 +29,7 @@ namespace Sanofi___Selenium.Features
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "ConfigurarCookies.feature"
+#line 1 "Cookies.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -48,7 +48,7 @@ namespace Sanofi___Selenium.Features
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-BR"), "features", "Configurar Cookies", "                Para melhorar a navegação, medir o desempenho e visualizar public" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("pt-BR"), "features", "Cookies", "                Para melhorar a navegação, medir o desempenho e visualizar public" +
                     "idade personalizada no portal Sanofi Conecta \r\n                Eu, como usuário " +
                     "do sistema\r\n                Devo Configurar os Cookies", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
@@ -65,9 +65,9 @@ namespace Sanofi___Selenium.Features
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "Configurar Cookies")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "Cookies")))
             {
-                global::Sanofi___Selenium.Features.ConfigurarCookiesFeature.FeatureSetup(null);
+                global::Sanofi___Selenium.Features.CookiesFeature.FeatureSetup(null);
             }
         }
         

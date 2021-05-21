@@ -23,7 +23,7 @@ E eu altero o Celular para um numero valido
 E eu clico em Salvar
 Então devo visualizar a mensagem "Dados alterados com sucesso"
 
-# 02 Bugs: Botao Salvar disponibilizado na alteracao e Botao salvar sem acão para conta cadastradas com celular invalido 
+# CORRIGIDO!
 Cenario: Alterar numero do celular utilizando um numero inválido
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir

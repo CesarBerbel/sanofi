@@ -1,6 +1,6 @@
 ﻿#language: pt-BR
 
-Funcionalidade: Configurar Cookies
+Funcionalidade: Cookies
                 Para melhorar a navegação, medir o desempenho e visualizar publicidade personalizada no portal Sanofi Conecta 
                 Eu, como usuário do sistema
                 Devo Configurar os Cookies
@@ -12,6 +12,5 @@ Funcionalidade: Configurar Cookies
 #E eu devo ver as configurações de cookies
 #Quando eu clico em Rejeitar Todos
 #Então o modal desaparece
-
 
 #Cenario: Aceitar Todos os Cookies

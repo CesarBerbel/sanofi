@@ -394,6 +394,9 @@ testRunner.Then("eu devo ser direcionado para página de Favoritos", ((string)(n
 #line 72
 testRunner.When("eu clico em Remover item dos favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
+#line 73
+testRunner.Then("devo ver a mensagem de salvamento \"Item removido da sua área pessoal\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+#line hidden
             }
             this.ScenarioCleanup();
         }

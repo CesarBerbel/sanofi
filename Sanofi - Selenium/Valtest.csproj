@@ -452,7 +452,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="framework\core\Report.cs" />
-    <Compile Include="pages\ConfigurarCookiesPage.cs" />
+    <Compile Include="pages\CookiesPage.cs" />
     <Compile Include="pages\EventoPage.cs" />
     <Compile Include="pages\ArtigoPage.cs" />
     <Compile Include="pages\CampanhasPage.cs" />
@@ -461,7 +461,7 @@
     <Compile Include="pages\PersonalizarContaPage.cs" />
     <Compile Include="pages\PesquisaModalPage.cs" />
     <Compile Include="pages\ProdutosPage.cs" />
-    <Compile Include="steps\ConfigurarCookiesSteps.cs" />
+    <Compile Include="steps\CookiesSteps.cs" />
     <Compile Include="steps\PersonalizarContaSteps.cs" />
     <Compile Include="steps\PesquisaModalSteps.cs" />
     <Compile Include="steps\ProdutoSteps.cs" />
@@ -484,8 +484,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="features\Treinamentos.feature" />
     <None Include="features\Campanhas.feature" />
-    <None Include="features\ConfigurarCookies.feature" />
+    <None Include="features\Cookies.feature" />
     <None Include="features\CriarConta.feature" />
     <None Include="features\EsqueciSenha.feature" />
     <None Include="features\Eventos.feature" />

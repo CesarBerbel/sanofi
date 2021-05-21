@@ -56,7 +56,6 @@ Entao devo ver a mensagem do evento "Olá, Esse conteúdo é exclusivo para Méd
 Quando eu acesso o evento "https://stg-cd.sanoficonecta.com.br/eventos/evento-zinpass-eze-2021-automacao-data-futura"
 Entao devo ver a mensagem do evento "Olá, Esse conteúdo é exclusivo para Médico." 
 
-
 Cenario: Tentar adicionar evento aos favoritos, utilizando perfil sem permissão
 Dado que eu acesse o sistema
 Quando eu acesso o evento "https://stg-cd.sanoficonecta.com.br/eventos/hipoplay-now-hipotireoidismo-e-o-coracao"

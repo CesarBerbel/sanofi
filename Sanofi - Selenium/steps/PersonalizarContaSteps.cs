@@ -45,7 +45,7 @@ namespace Sanofi___Selenium.steps
         [When(@"eu clico Interesses")]
         public void QuandoEuClicoInteresses()
         {
-            App.Click(BasePage.PersonalizarConta.Interesses);
+            App.Click(BasePage.PersonalizarConta.EspecialidadesInteresses);
         }
 
 
