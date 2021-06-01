@@ -156,5 +156,17 @@ namespace Sanofi___Selenium.steps
             string msg = App.GetTextBy(By.XPath("//div[@class='c-base-modal-content__body']/div/div[@class='c-text']"));
             Asserts.VerificarString("Aproveitando seus dados precisamos apenas de quatro informações:", msg);
         }
+
+        [Then(@"devo ver as mensagens de erro ""(.*)""")]
+        public void EntaoDevoVerAsMensagensDeErro(string msg)
+        {
+          //  App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//div[@id='phone-error']")));
+
+            string mensagem = App.WaitText("//div[@id='phone-error']", msg);
+
+            Asserts.VerificarString(msg, mensagem);
+
+        }
+
     }
 }

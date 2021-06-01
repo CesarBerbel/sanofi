@@ -193,7 +193,7 @@ E marco a opcao Li e concordo com os Termos e Condições.
 E eu clico em Continuar
 Quando Eu preencho o campo Nome com "Dentista"
 E preencho o campo Sobrenome com "Automacao"
-E eu preencho o Celular com "79123456789"
+E eu preencho o Celular com "79987165507"
 E preencho o campo Adicionar Senha com "123456"
 E preencho o campo Repetir Senha com "123456"
 E clico em Finalizar

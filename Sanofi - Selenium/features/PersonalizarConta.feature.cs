@@ -901,7 +901,7 @@ testRunner.When("Eu preencho o campo Nome com \"Dentista\"", ((string)(null)), (
 testRunner.And("preencho o campo Sobrenome com \"Automacao\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 196
-testRunner.And("eu preencho o Celular com \"79123456789\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("eu preencho o Celular com \"79987165507\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 197
 testRunner.And("preencho o campo Adicionar Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");

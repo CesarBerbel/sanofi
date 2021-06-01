@@ -16,7 +16,7 @@ E marco a opcao Li e concordo com os Termos e Condições.
 E eu clico em Continuar
 E Eu preencho o campo Nome com "Doctor Angry"
 E preencho o campo Sobrenome com "Birds"
-E eu preencho o Celular com "79123456789"
+E eu preencho o Celular com "7912345678"
 E preencho o campo Adicionar Senha com "123456"
 E preencho o campo Repetir Senha com "123456"
 E clico em Finalizar
@@ -70,7 +70,6 @@ Quando eu clico em Continuar
 Entao devo ver as mensagens de erro do Login "Escolher Estado,Favor informar seu número de registro,Email inválido,Marcar o aceite,"
 
 
-#BUG. Cenário novo que falhou. Precisa de correção de DEV
 Cenario: Tentar criar conta com Celular invalido
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
@@ -87,7 +86,7 @@ E eu preencho o Celular com "00000"
 E preencho o campo Adicionar Senha com "123456"
 E preencho o campo Repetir Senha com "123456"
 E clico em Finalizar
-Entao devo ver as mensagens de erro do Login "Celular inválido"
+Entao devo ver as mensagens de erro "Celular inválido"
 
 Cenario: Criar conta com usuario Validado (SoftLogin)
 Dado que eu acesse o sistema
@@ -108,7 +107,7 @@ E clico em Logar
 Entao eu devo ser direcionado para página de finalizacao de cadastro
 Quando Eu preencho o campo Nome com "Doctor Bob"
 E preencho o campo Sobrenome com "Esponja"
-E eu preencho o Celular com "79123456789"
+E eu preencho o Celular com "79987165507"
 E preencho o campo Adicionar Senha com "123456"
 E preencho o campo Repetir Senha com "123456"
 E clico em Finalizar

@@ -69,9 +69,12 @@ namespace Sanofi___Selenium.steps
         public void EntaoDevoVerAsMensagensDeErro(string msgs)
         {
 			string[] mensagens = msgs.Split(',');
-			App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//div[@class='c-base-modal__text-error']")));
+            //App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//div[@class='c-base-modal__text-error' or @id='generic-error']")));
 
-            IList <IWebElement> ErrorMsgs = BrowserFactory.Driver.FindElements(By.XPath("//div[@class='c-base-modal__text-error']"));
+                       
+            App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//div[@class='c-base-modal__text-error']")));
+
+            IList<IWebElement> ErrorMsgs = BrowserFactory.Driver.FindElements(By.XPath("//div[@class='c-base-modal__text-error']"));
 
 			string palavra1, palavra2;
 			

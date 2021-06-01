@@ -459,6 +459,7 @@
     <Compile Include="pages\CriarContaPage.cs" />
     <Compile Include="pages\LoginModal.cs" />
     <Compile Include="pages\PersonalizarContaPage.cs" />
+    <Compile Include="pages\TreinamentosPage.cs" />
     <Compile Include="pages\PesquisaModalPage.cs" />
     <Compile Include="pages\ProdutosPage.cs" />
     <Compile Include="steps\CookiesSteps.cs" />
@@ -481,6 +482,7 @@
     <Compile Include="steps\ArtigoSteps.cs" />
     <Compile Include="steps\LoginSteps.cs" />
     <Compile Include="steps\RecuprerSenhaSteps.cs" />
+    <Compile Include="steps\TreinamentosSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

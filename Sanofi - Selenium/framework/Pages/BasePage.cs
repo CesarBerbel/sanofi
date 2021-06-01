@@ -63,5 +63,10 @@ namespace Sanofi___Selenium.framework.Pages
         {
             get { return GetPage<CriarConta>(); }
         }
+        public static Treinamentos TreinamentosPage
+        {
+            get { return GetPage<Treinamentos>(); }
+        }
+
     }
 }
