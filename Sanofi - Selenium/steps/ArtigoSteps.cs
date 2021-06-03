@@ -51,13 +51,12 @@ namespace Sanofi___Selenium.steps
 		public void EntaoDevoVerAMensagemDoArtigo(string msg)
 		{
 			string mensagem = App.GetTextBy(By.XPath("//div[@class='c-text c-text--text-left c-text--wraped']"));
-			mensagem = mensagem.Remove(4, 2);
+            mensagem = mensagem.Remove(4, 2);
 			Asserts.VerificarString(msg, mensagem, true);
 
 		}
-
-
-		[Then(@"eu devo ser direcionado para página de validacao")]
+        
+        [Then(@"eu devo ser direcionado para página de validacao")]
 		public void EntaoEuDevoSerDirecionadoParaPaginaDeValidacao()
 		{			
 			string mensagem = App.WaitText("//div[@id='modal-soft-login']//div[@class='c-text c-text--h2']", "Validação");
@@ -143,7 +142,9 @@ namespace Sanofi___Selenium.steps
 		[When(@"eu clico em Remover item dos favoritos")]
 		public void QuandoEuClicoEmRemoverItemDosFavoritos()
 		{
-			App.JClick(BasePage.ArtigoPage.RemoverItem);
+            App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//div[@class='c-favorites__list-item']//i")));
+
+            App.JClick(BasePage.ArtigoPage.RemoverItem);
 		}
 
 		[When(@"eu clico em Compartilhar")]

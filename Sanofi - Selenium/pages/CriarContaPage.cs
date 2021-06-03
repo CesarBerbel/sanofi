@@ -8,9 +8,10 @@ namespace Sanofi___Selenium.pages
 		
 		public By ConfirmEmail = By.Id("sf-email-check-hcp");
 
-		
+        public By deixarParaDepois = By.XPath("//button[@class='c-base-modal-content__button--link']");
 
 
-        
+
+
     }
 }

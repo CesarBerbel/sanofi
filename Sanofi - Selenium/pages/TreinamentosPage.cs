@@ -14,10 +14,14 @@ namespace Sanofi___Selenium.pages
 
         public By btnProximo = By.XPath("//button[@class='c-survey__button c-survey__button--active']");
         
-
       //  public By btnEnviar = By.XPath("//button[@class='c-survey__button']");
 
         public By btnAbrirModulo = By.XPath("//*[@class='body-container']/div[3]/div[3]/div[2]/div/div[3]/div/footer/button");
+        public By btnAbrirMod = By.XPath("//div[@class='courses__card']/footer/button");
+
+        public By pdf = By.XPath("//a[@class='c-icon--pdf']");
+
+        public By fecharModulo = By.XPath("//div[@class='classes']//div[@class='c-modal__close icon icon-close']");
 
         public By btnEnviarResposta = By.XPath("//button[@class='c-quizz-form-container-vert__button']");
 

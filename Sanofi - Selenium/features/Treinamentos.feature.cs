@@ -93,14 +93,14 @@ namespace Sanofi___Selenium.Features
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Realizar Treinamento com softLogin")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Realizar Treinamento")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Treinamentos")]
-        public virtual void RealizarTreinamentoComSoftLogin()
+        public virtual void RealizarTreinamento()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Realizar Treinamento com softLogin", null, tagsOfScenario, argumentsOfScenario);
-#line 28
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Realizar Treinamento", null, tagsOfScenario, argumentsOfScenario);
+#line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -120,54 +120,251 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 29
+#line 9
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
+#line 10
+testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 11
+testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 12
+testRunner.When("escolho tipo de HCP \"Dentista (CRO)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 13
+testRunner.And("escolho o Estado \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 14
+testRunner.And("preencho o campo Número do registro com registro aleatório", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 15
+testRunner.And("preencho o Email com email aleatório", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 16
+testRunner.And("marco a opcao Li e concordo com os Termos e Condições.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 17
+testRunner.And("eu clico em Continuar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 18
+testRunner.And("Eu preencho o campo Nome com \"Doctor Angry\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 19
+testRunner.And("preencho o campo Sobrenome com \"Birds\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 20
+testRunner.And("eu preencho o Celular com \"7912345678\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 21
+testRunner.And("preencho o campo Adicionar Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 22
+testRunner.And("preencho o campo Repetir Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 23
+testRunner.And("clico em Finalizar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 24
+testRunner.And("eu clico em Deixar para depois", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 25
+testRunner.Given("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+#line hidden
+#line 26
+testRunner.When("eu clico em Treinamentos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 27
+testRunner.And("eu acesso o Treinamento \"https://stg-cd.sanoficonecta.com.br/treinamentos/automat" +
+                        "ion/automation-test-crm\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 28
+testRunner.And("clico em Abrir Módulo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 29
+testRunner.And("clico para baixar pdf", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
 #line 30
+testRunner.Then("o conteúdo é marcado como concluído", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+#line hidden
+#line 31
+testRunner.When("respondo \"3\" na pergunta \"1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 32
+testRunner.And("Clico em Enviar resposta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 33
+testRunner.Then("eu devo ver a mensagem de sucesso \"Resposta Certa\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+#line hidden
+#line 34
+testRunner.When("eu clico em Proxima pergunta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 35
+testRunner.And("respondo \"1\" na pergunta \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 36
+testRunner.And("Clico em Enviar resposta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 37
+testRunner.Then("eu devo ver a mensagem de sucesso \"Resposta Certa\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+#line hidden
+#line 38
+testRunner.When("eu clico em Proxima pergunta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 39
+testRunner.Then("devo ver a mensagem: \"Você completou o Módulo Aula 01\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+#line hidden
+#line 40
+testRunner.When("eu clico em fechar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 41
+testRunner.Then("devo ver a mensagem de conclusão de curso \"Sucesso! Você concluiu o curso. Faça o" +
+                        " download do seu certificado no topo da página.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Realizar Treinamento com perfil sem permissão")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Treinamentos")]
+        public virtual void RealizarTreinamentoComPerfilSemPermissao()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Realizar Treinamento com perfil sem permissão", null, tagsOfScenario, argumentsOfScenario);
+#line 43
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 44
+testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+#line hidden
+#line 45
+testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 46
+testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 47
+testRunner.When("Eu escolho o login por email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 48
+testRunner.And("preencho o campo Email com \"farmaceutico01@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 49
+testRunner.And("preencho o campo Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 50
+testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line hidden
+#line 51
+testRunner.Given("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+#line hidden
+#line 52
+testRunner.When("eu acesso o Treinamento \"https://stg-cd.sanoficonecta.com.br/treinamentos/automat" +
+                        "ion/automation-test-crm\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line hidden
+#line 53
+testRunner.Then("devo ver a mensagem de conteúdo exclusivo \"Olá Farmaceutico, Esse conteúdo é excl" +
+                        "usivo para Médico e Dentista.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Realizar Treinamento com softLogin")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Treinamentos")]
+        public virtual void RealizarTreinamentoComSoftLogin()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Realizar Treinamento com softLogin", null, tagsOfScenario, argumentsOfScenario);
+#line 56
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 57
+testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
+#line hidden
+#line 58
 testRunner.When("eu acesso o artigo \"https://stg-cd.sanoficonecta.com.br/artigos/Hipotireoidismo-e" +
                         "-riscos-associados-modulo-III-dislipidemia\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 31
+#line 59
 testRunner.Then("devo ver a mensagem \"Conteúdo exclusivo para Médico\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 32
+#line 60
 testRunner.When("eu clico em SIM", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 33
+#line 61
 testRunner.And("eu clico em Prosseguir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 34
+#line 62
 testRunner.Then("eu devo ser direcionado para página de validacao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 35
+#line 63
 testRunner.When("escolho tipo de HCP \"Farmacêutico (CRF)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 36
+#line 64
 testRunner.And("escolho o Estado \"CE\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 37
+#line 65
 testRunner.And("preencho o campo do registro com \"19861\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 38
+#line 66
 testRunner.And("preencho o Email com \"farma_ce@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 39
+#line 67
 testRunner.And("marco a opcao Li e concordo com os Termos e Condições.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 40
+#line 68
 testRunner.And("clico em Finalizar Validacao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 41
+#line 69
 testRunner.Then("devo ver a mensagem do artigo \"Olá,Esse conteúdo é exclusivo para Médico.\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 42
+#line 70
 testRunner.When("Eu clico para voltar pra Home", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 43
+#line 71
 testRunner.And("eu acesso o Treinamento \"https://stg-cd.sanoficonecta.com.br/treinamentos/crf/far" +
                         "maceuticos\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 44
+#line 72
 testRunner.Then("eu devo ser direcionado para Home deslogada", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
@@ -182,7 +379,7 @@ testRunner.Then("eu devo ser direcionado para Home deslogada", ((string)(null)),
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Responder Pesquisa de Satisfação", null, tagsOfScenario, argumentsOfScenario);
-#line 46
+#line 74
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -202,74 +399,62 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 47
+#line 75
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 48
+#line 76
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 49
+#line 77
 testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 50
+#line 78
 testRunner.When("Eu escolho o login por email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 51
+#line 79
 testRunner.And("preencho o campo Email com \"testemedico@grr.la\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 52
+#line 80
 testRunner.And("preencho o campo Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 53
+#line 81
 testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 54
+#line 82
 testRunner.Given("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 55
+#line 83
 testRunner.When("eu clico em Treinamentos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 56
+#line 84
 testRunner.Then("eu devo ser direcionado para página de treinamentos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 57
-testRunner.When("eu acesso o Treinamento \"https://stg-cd.sanoficonecta.com.br/treinamentos/crm/t2i" +
-                        "-leaders\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+#line 85
+testRunner.When("eu acesso o Treinamento \"https://stg-cd.sanoficonecta.com.br/treinamentos/automat" +
+                        "ion/automation-test-crm\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 58
+#line 86
 testRunner.And("respondo \"1\" na questao \"1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 59
+#line 87
 testRunner.And("respondo \"2\" na questao \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 60
+#line 88
 testRunner.And("respondo \"3\" na questao \"3\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 61
-testRunner.And("respondo \"4\" na questao \"4\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 62
+#line 89
 testRunner.And("clico em Proximo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 63
+#line 90
 testRunner.And("respondo \"1\" na questao \"1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 64
+#line 91
 testRunner.And("respondo \"2\" na questao \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 65
-testRunner.And("clico em Proximo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 66
-testRunner.And("respondo \"1\" na questao \"1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 67
-testRunner.And("respondo \"2\" na questao \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
-#line hidden
-#line 68
+#line 92
 testRunner.And("clico em Enviar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 69
+#line 93
 testRunner.Then("eu devo ver a mensagem: \"Respostas enviadas! Obrigado!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }
@@ -284,7 +469,7 @@ testRunner.Then("eu devo ver a mensagem: \"Respostas enviadas! Obrigado!\"", ((s
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Responder Quiz", null, tagsOfScenario, argumentsOfScenario);
-#line 71
+#line 95
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -304,104 +489,104 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 72
+#line 96
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 73
+#line 97
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 74
+#line 98
 testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 75
+#line 99
 testRunner.When("Eu escolho o login por email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 76
+#line 100
 testRunner.And("preencho o campo Email com \"testemedico@grr.la\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 77
+#line 101
 testRunner.And("preencho o campo Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 78
+#line 102
 testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 79
+#line 103
 testRunner.Given("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 80
+#line 104
 testRunner.When("eu clico em Treinamentos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 81
+#line 105
 testRunner.Then("eu devo ser direcionado para página de treinamentos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 82
+#line 106
 testRunner.When("eu acesso o Treinamento \"https://stg-cd.sanoficonecta.com.br/treinamentos/crm/t2i" +
                         "-leaders\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 83
+#line 107
 testRunner.And("clico em Abrir Módulo \"3 Comunicação Eficiente\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 84
+#line 108
 testRunner.And("respondo \"3\" na pergunta \"1\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 85
+#line 109
 testRunner.And("Clico em Enviar resposta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 86
+#line 110
 testRunner.Then("eu devo ver a mensagem de sucesso \"Resposta Certa\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 87
+#line 111
 testRunner.When("eu clico em Proxima pergunta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 88
+#line 112
 testRunner.And("respondo \"1\" na pergunta \"2\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 89
+#line 113
 testRunner.And("Clico em Enviar resposta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 90
+#line 114
 testRunner.Then("eu devo ver a mensagem de sucesso \"Resposta Certa\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 91
+#line 115
 testRunner.When("eu clico em Proxima pergunta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 92
+#line 116
 testRunner.And("respondo \"3\" na pergunta \"3\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 93
+#line 117
 testRunner.And("Clico em Enviar resposta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 94
+#line 118
 testRunner.Then("eu devo ver a mensagem de sucesso \"Resposta Certa\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 95
+#line 119
 testRunner.When("eu clico em Proxima pergunta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 96
+#line 120
 testRunner.And("respondo \"1\" na pergunta \"4\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 97
+#line 121
 testRunner.And("Clico em Enviar resposta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 98
+#line 122
 testRunner.Then("eu devo ver a mensagem de sucesso \"Resposta Certa\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 99
+#line 123
 testRunner.When("eu clico em Proxima pergunta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 100
+#line 124
 testRunner.And("respondo \"4\" na pergunta \"5\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 101
+#line 125
 testRunner.And("Clico em Enviar resposta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 102
+#line 126
 testRunner.Then("eu devo ver a mensagem de sucesso \"Resposta Certa\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 103
+#line 127
 testRunner.When("eu clico em Proxima pergunta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 104
+#line 128
 testRunner.Then("devo ver a mensagem: \"Você completou o Módulo 3. Comunicação Eficiente\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
@@ -416,7 +601,7 @@ testRunner.Then("devo ver a mensagem: \"Você completou o Módulo 3. Comunicaç�
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Fazer download do Certificado", null, tagsOfScenario, argumentsOfScenario);
-#line 106
+#line 130
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -436,44 +621,44 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 107
+#line 131
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 108
+#line 132
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 109
+#line 133
 testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 110
+#line 134
 testRunner.When("Eu escolho o login por email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 111
+#line 135
 testRunner.And("preencho o campo Email com \"medico01@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 112
+#line 136
 testRunner.And("preencho o campo Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 113
+#line 137
 testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 114
+#line 138
 testRunner.Given("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 115
+#line 139
 testRunner.When("eu clico em Treinamentos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 116
+#line 140
 testRunner.Then("eu devo ser direcionado para página de treinamentos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 117
+#line 141
 testRunner.When("eu acesso o Treinamento \"https://stg-cd.sanoficonecta.com.br/treinamentos/crf/far" +
                         "maceuticos\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 118
+#line 142
 testRunner.And("clico em Fazer download do Certificado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 119
+#line 143
 testRunner.Then("eu devo visualizar o certificado em outra janela", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
@@ -488,7 +673,7 @@ testRunner.Then("eu devo visualizar o certificado em outra janela", ((string)(nu
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adicionar e Retirar Treinamentos dos favoritos", null, tagsOfScenario, argumentsOfScenario);
-#line 121
+#line 145
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -508,59 +693,59 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 122
+#line 146
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 123
+#line 147
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 124
+#line 148
 testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 125
+#line 149
 testRunner.When("Eu escolho o login por email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 126
+#line 150
 testRunner.And("preencho o campo Email com \"medico@servidor.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 127
+#line 151
 testRunner.And("preencho o campo Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 128
+#line 152
 testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 129
+#line 153
 testRunner.Given("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 130
+#line 154
 testRunner.When("eu clico em Treinamentos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 131
+#line 155
 testRunner.Then("eu devo ser direcionado para página de treinamentos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 132
+#line 156
 testRunner.When("eu acesso o Treinamento \"https://stg-cd.sanoficonecta.com.br/treinamentos/crm/asm" +
                         "a\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 133
+#line 157
 testRunner.And("eu clico em Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 134
+#line 158
 testRunner.Then("devo ver a mensagem de salvamento \"Treinamento adicionado à sua área pessoal\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
-#line 135
+#line 159
 testRunner.Given("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 136
+#line 160
 testRunner.When("eu clico em Itens Salvos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 137
+#line 161
 testRunner.Then("eu devo ser direcionado para página de Favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
-#line 138
+#line 162
 testRunner.When("eu clico em Remover item dos favoritos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 139
+#line 163
 testRunner.Then("devo ver a mensagem de salvamento \"Item removido da sua área pessoal\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
@@ -575,7 +760,7 @@ testRunner.Then("devo ver a mensagem de salvamento \"Item removido da sua área 
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Compartilhar Treinamentos nas redes sociais e Copiar link", null, tagsOfScenario, argumentsOfScenario);
-#line 141
+#line 165
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -595,37 +780,37 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 142
+#line 166
 testRunner.Given("que eu acesse o sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 143
+#line 167
 testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 144
+#line 168
 testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 145
+#line 169
 testRunner.When("Eu escolho o login por email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 146
+#line 170
 testRunner.And("preencho o campo Email com \"medico@servidor.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 147
+#line 171
 testRunner.And("preencho o campo Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 148
+#line 172
 testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 149
+#line 173
 testRunner.Given("eu clico no menu profile Logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
-#line 150
+#line 174
 testRunner.When("eu clico em Treinamentos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
-#line 151
+#line 175
 testRunner.And("eu clico em Compartilhar treinamento", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
-#line 152
+#line 176
 testRunner.Then("devo ver os links \"Whatsapp,Facebook,LinkedIn,Copiar link\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
             }

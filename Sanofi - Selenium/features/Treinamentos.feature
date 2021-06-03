@@ -5,24 +5,52 @@ Funcionalidade: Treinamentos
 				Para assistir os cursos
 
 
-#Cenario: Realizar Treinamento
-#Dado que eu acesse o sistema
-#E eu clico no menu profile para expandir
-#E clico em Entrar
-#Quando Eu escolho o login por email
-#E preencho o campo Email com "medico@servidor.com"
-#E preencho o campo Senha com "123456"
-#E clico em Logar
-#Dado eu clico no menu profile Logado para expandir
-#Quando eu clico em Treinamentos
-#Então eu devo ser direcionado para página de treinamentos
-#Quando eu acesso o Treinamento "https://stg-cd.sanoficonecta.com.br/treinamentos/automation/automation-test-crm"
-#E clico em Abrir Módulo "UM"
-#E clico no Menu PDF
-#E clico para baixar pdf
-#Então o sistema realiza o download
-#Então eu devo ver a mensagem "Sucesso! Você concluiu o curso"
+Cenario: Realizar Treinamento
+Dado que eu acesse o sistema
+E eu clico no menu profile para expandir
+E clico em Criar Conta
+Quando escolho tipo de HCP "Dentista (CRO)"
+E escolho o Estado "BA"
+E preencho o campo Número do registro com registro aleatório
+E preencho o Email com email aleatório
+E marco a opcao Li e concordo com os Termos e Condições.
+E eu clico em Continuar
+E Eu preencho o campo Nome com "Doctor Angry"
+E preencho o campo Sobrenome com "Birds"
+E eu preencho o Celular com "7912345678"
+E preencho o campo Adicionar Senha com "123456"
+E preencho o campo Repetir Senha com "123456"
+E clico em Finalizar
+E eu clico em Deixar para depois
+Dado eu clico no menu profile Logado para expandir
+Quando eu clico em Treinamentos
+E eu acesso o Treinamento "https://stg-cd.sanoficonecta.com.br/treinamentos/automation/automation-test-crm"
+E clico em Abrir Módulo
+E clico para baixar pdf
+Então o conteúdo é marcado como concluído
+Quando respondo "3" na pergunta "1" 
+E Clico em Enviar resposta
+Entao eu devo ver a mensagem de sucesso "Resposta Certa"
+Quando eu clico em Proxima pergunta
+E respondo "1" na pergunta "2" 
+E Clico em Enviar resposta
+Entao eu devo ver a mensagem de sucesso "Resposta Certa"
+Quando eu clico em Proxima pergunta
+Então devo ver a mensagem: "Você completou o Módulo Aula 01"
+Quando eu clico em fechar
+Então devo ver a mensagem de conclusão de curso "Sucesso! Você concluiu o curso. Faça o download do seu certificado no topo da página."
 
+Cenario: Realizar Treinamento com perfil sem permissão
+Dado que eu acesse o sistema
+E eu clico no menu profile para expandir
+E clico em Entrar
+Quando Eu escolho o login por email
+E preencho o campo Email com "farmaceutico01@teste.com"
+E preencho o campo Senha com "123456"
+E clico em Logar
+Dado eu clico no menu profile Logado para expandir
+Quando eu acesso o Treinamento "https://stg-cd.sanoficonecta.com.br/treinamentos/automation/automation-test-crm"
+Entao devo ver a mensagem de conteúdo exclusivo "Olá Farmaceutico, Esse conteúdo é exclusivo para Médico e Dentista."
 
 
 Cenario: Realizar Treinamento com softLogin
@@ -54,14 +82,10 @@ E clico em Logar
 Dado eu clico no menu profile Logado para expandir
 Quando eu clico em Treinamentos
 Então eu devo ser direcionado para página de treinamentos
-Quando eu acesso o Treinamento "https://stg-cd.sanoficonecta.com.br/treinamentos/crm/t2i-leaders"
+Quando eu acesso o Treinamento "https://stg-cd.sanoficonecta.com.br/treinamentos/automation/automation-test-crm"
 E respondo "1" na questao "1" 
 E respondo "2" na questao "2"
 E respondo "3" na questao "3"
-E respondo "4" na questao "4"
-E clico em Proximo
-E respondo "1" na questao "1"  
-E respondo "2" na questao "2"
 E clico em Proximo
 E respondo "1" na questao "1" 
 E respondo "2" na questao "2"
@@ -150,5 +174,3 @@ Dado eu clico no menu profile Logado para expandir
 Quando eu clico em Treinamentos
 E eu clico em Compartilhar treinamento
 Entao devo ver os links "Whatsapp,Facebook,LinkedIn,Copiar link"
-
-

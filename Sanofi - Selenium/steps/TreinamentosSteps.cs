@@ -85,8 +85,17 @@ namespace Sanofi___Selenium.steps
         public void EntaoEuDevoVerAMensagemDeSucesso(string msg)
         {
             string mensagem = App.WaitText("//span[@class='c-quizz-form-container-vert__right']", msg);
+            Asserts.VerificarString(msg, mensagem);
+
         }
 
+        [Then(@"devo ver a mensagem de conclusão de curso ""(.*)""")]
+        public void EntaoDevoVerAMensagemDeConclusaoDeCurso(string msg)
+        {
+            string mensagem = App.WaitText("//span[@class='c-text c-text--branco']", msg);
+            Asserts.VerificarString(msg, mensagem);
+
+        }
 
         [When(@"respondo ""(.*)"" na pergunta ""(.*)""")]
         public void QuandoRespondoNaPergunta(string resposta, string pergunta)
@@ -113,6 +122,27 @@ namespace Sanofi___Selenium.steps
             //  botoes[2].Click();
         }
 
+        [When(@"clico em Abrir Módulo")]
+        public void QuandoClicoEmAbrirModulo()
+        {
+            App.JClick(BasePage.TreinamentosPage.btnAbrirMod);
+
+        }
+
+        [When(@"clico para baixar pdf")]
+        public void QuandoClicoParaBaixarPdf()
+        {
+            App.JClick(BasePage.TreinamentosPage.pdf);
+        }
+
+        [Then(@"o conteúdo é marcado como concluído")]
+        public void EntaoOConteudoEMarcadoComoConcluido()
+        {
+            App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//p[@class='icon icon-check']")));
+        }
+
+
+
         [When(@"Clico em Enviar resposta")]
         public void QuandoClicoEmEnviarResposta()
         {
@@ -134,7 +164,18 @@ namespace Sanofi___Selenium.steps
             Assert.IsTrue(BrowserFactory.Driver.Url.Contains(".pdf"));
         }
 
-       
+        [When(@"eu clico em fechar")]
+        public void QuandoEuClicoEmFechar()
+        {
+            App.Click(BasePage.TreinamentosPage.fecharModulo);
+        }
+
+        [When(@"eu clico em Deixar para depois")]
+        public void QuandoEuClicoEmDeixarParaDepois()
+        {
+            App.Click(BasePage.CriarContaPage.deixarParaDepois);
+        }
+
 
     }
 }

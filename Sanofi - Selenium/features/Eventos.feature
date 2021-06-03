@@ -38,7 +38,7 @@ E preencho o campo do registro com "1111111"
 E preencho o Email com "farmaceutico01@teste.com"
 E marco a opcao Li e concordo com os Termos e Condições.
 E eu clico em Continuar
-Entao devo ver a mensagem do evento "Olá, Esse conteúdo é exclusivo para Médico."
+Entao devo ver a mensagem de conteúdo exclusivo "Olá, Esse conteúdo é exclusivo para Médico."
 
 Cenario: Tentar acessar evento exclusivo para outro perfil, a partir do SoftLogin 
 Dado que eu acesse a campanha "https://stg-cd.sanoficonecta.com.br/campanha/dits"
@@ -52,9 +52,9 @@ E preencho o campo do registro com "1781"
 E preencho o Email com "ledadentista@grr.la"
 E marco a opcao Li e concordo com os Termos e Condições.
 E clico em Finalizar Validacao
-Entao devo ver a mensagem do evento "Olá, Esse conteúdo é exclusivo para Médico e Farmacêutico."
+Entao devo ver a mensagem de conteúdo exclusivo "Olá, Esse conteúdo é exclusivo para Médico e Farmacêutico."
 Quando eu acesso o evento "https://stg-cd.sanoficonecta.com.br/eventos/evento-zinpass-eze-2021-automacao-data-futura"
-Entao devo ver a mensagem do evento "Olá, Esse conteúdo é exclusivo para Médico." 
+Entao devo ver a mensagem de conteúdo exclusivo "Olá, Esse conteúdo é exclusivo para Médico." 
 
 Cenario: Tentar adicionar evento aos favoritos, utilizando perfil sem permissão
 Dado que eu acesse o sistema
@@ -67,10 +67,10 @@ Quando Eu escolho o login por email
 E preencho o campo Email com "ledadentista@grr.la"
 E preencho o campo Senha com "123456"
 E clico em Logar
-Entao devo ver a mensagem do evento "Olá Leda, Esse conteúdo é exclusivo para Médico."
+Entao devo ver a mensagem de conteúdo exclusivo "Olá Leda, Esse conteúdo é exclusivo para Médico."
 Quando Eu clico em fechar
 E eu clico em Favoritos Eventos
-Entao devo ver a mensagem do evento "Olá Leda, Esse conteúdo é exclusivo para Médico."
+Entao devo ver a mensagem de conteúdo exclusivo "Olá Leda, Esse conteúdo é exclusivo para Médico."
 
 Cenario: Adicionar e Retirar Evento dos favoritos
 Dado que eu acesse o sistema
@@ -86,6 +86,8 @@ E marco a opcao Li e concordo com os Termos e Condições.
 E eu clico em Continuar
 E preencho o campo Senha com "123456"
 E clico em Logar
+Então devo ver meu nome "Medico Teste" no menu profile
+Quando eu acesso o evento "https://stg-cd.sanoficonecta.com.br/eventos/hipoplay-now-hipotireoidismo-e-o-coracao"
 Então eu visualizo o evento "https://stg-cd.sanoficonecta.com.br/eventos/hipoplay-now-hipotireoidismo-e-o-coracao"
 Quando eu clico em Favoritos Eventos
 Entao devo ver a mensagem de salvamento "Evento adicionado à sua área pessoal" 

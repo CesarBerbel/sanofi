@@ -33,25 +33,26 @@ namespace Sanofi___Selenium.steps
 			App.GoTo(url, false);
 		}
 		
-		[Then(@"devo ver a mensagem do evento ""(.*)""")]
-		public void EntaoDevoVerAMensagemDoEvento(string msg)
-		{
-			string mensagem = App.GetTextBy(By.XPath("//div[@class='c-text c-text--text-left c-text--wraped']"));
-			mensagem = mensagem.Replace("\r\n", " ");
-			Asserts.VerificarString(msg, mensagem, true);
-			//string texto = App.GetTextBy(By.XPath("//div[@class='c-text c-text--text-left c-text--wraped']"));
-			//Asserts.VerificarString(texto, msg);
-		}
-
-		//[Then(@"devo ver a mensagem do evento exclusivo ""(.*)""")]
-		//public void EntaoDevoVerAMensagemDoEventoExclusivo(string msg)
+		//[Then(@"devo ver a mensagem do evento ""(.*)""")]
+		//public void EntaoDevoVerAMensagemDoEvento(string msg)
 		//{
-		//	string texto = App.GetTextBy(BasePage.EventoPage.Mensagem);
-		//	Asserts.VerificarString(texto, msg);
+		//	string mensagem = App.GetTextBy(By.XPath("//div[@class='c-text c-text--text-left c-text--wraped']"));
+		//	mensagem = mensagem.Replace("\r\n", " ");
+		//	Asserts.VerificarString(msg, mensagem, true);
+			
 		//}
 
+        [Then(@"devo ver a mensagem de conteúdo exclusivo ""(.*)""")]
+        public void EntaoDevoVerAMensagemDeConteudoExclusivo(string msg)
+        {
+            string mensagem = App.GetTextBy(By.XPath("//div[@class='c-text c-text--text-left c-text--wraped']"));
+            mensagem = mensagem.Replace("\r\n", " ");
+            Asserts.VerificarString(msg, mensagem, true);
+        }
 
-		[When(@"eu clico em Compartilhar Evento")]
+
+
+        [When(@"eu clico em Compartilhar Evento")]
 		public void QuandoEuClicoEmCompartilharEvento()
 		{
 			App.JClick(BasePage.EventoPage.Compartilhar);
@@ -60,14 +61,14 @@ namespace Sanofi___Selenium.steps
 		[When(@"eu clico em Favoritos Eventos")]
 		public void QuandoEuClicoEmFavoritosEventos()
 		{
-			App.JClick(BasePage.EventoPage.Salvar);
+
+            App.JClick(BasePage.EventoPage.Salvar);
 		}
 
         [Given(@"que eu fecho o modal")]
         public void DadoQueEuFechoOModal()
         {
             App.Click(BasePage.LoginModal.IconeFechar);
-
 
         }
 
