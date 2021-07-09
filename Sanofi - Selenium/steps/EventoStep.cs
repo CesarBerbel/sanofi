@@ -33,14 +33,6 @@ namespace Sanofi___Selenium.steps
 			App.GoTo(url, false);
 		}
 		
-		//[Then(@"devo ver a mensagem do evento ""(.*)""")]
-		//public void EntaoDevoVerAMensagemDoEvento(string msg)
-		//{
-		//	string mensagem = App.GetTextBy(By.XPath("//div[@class='c-text c-text--text-left c-text--wraped']"));
-		//	mensagem = mensagem.Replace("\r\n", " ");
-		//	Asserts.VerificarString(msg, mensagem, true);
-			
-		//}
 
         [Then(@"devo ver a mensagem de conteúdo exclusivo ""(.*)""")]
         public void EntaoDevoVerAMensagemDeConteudoExclusivo(string msg)
@@ -49,21 +41,6 @@ namespace Sanofi___Selenium.steps
             mensagem = mensagem.Replace("\r\n", " ");
             Asserts.VerificarString(msg, mensagem, true);
         }
-
-
-
-        [When(@"eu clico em Compartilhar Evento")]
-		public void QuandoEuClicoEmCompartilharEvento()
-		{
-			App.JClick(BasePage.EventoPage.Compartilhar);
-		}
-
-		[When(@"eu clico em Favoritos Eventos")]
-		public void QuandoEuClicoEmFavoritosEventos()
-		{
-
-            App.JClick(BasePage.EventoPage.Salvar);
-		}
 
         [Given(@"que eu fecho o modal")]
         public void DadoQueEuFechoOModal()

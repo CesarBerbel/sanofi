@@ -1,7 +1,10 @@
-﻿using OpenQA.Selenium;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using Sanofi___Selenium.framework.core;
 using Sanofi___Selenium.framework.Pages;
 using Sanofi___Selenium.framework.steps;
+using System.Collections.Generic;
+using System.Threading;
 using TechTalk.SpecFlow;
 
 
@@ -10,17 +13,20 @@ namespace Sanofi___Selenium.steps
 	[Binding]
 	public class ProdutosSteps : BaseSteps
 	{
-		[When(@"eu clico em Produtos")]
-		public void QuandoEuClicoEmProdutos()
-		{
-			App.Click(BasePage.ProdutosPage.MenuProduto);
-		}
+        [When(@"eu clico no Menu ""(.*)""")]
+        public void QuandoEuClicoNoMenu(string prod)
+        {
+            App.Click(By.XPath("//p[text()='" + prod + "']"));
 
-		[When(@"eu clico em Produtos deslogado")]
-		public void QuandoEuClicoEmProdutosDeslogado()
-		{
-			App.Click(BasePage.ProdutosPage.MenuProdutoDeslogado);
-		}
+        }
+
+        [Then(@"eu não devo visualizar o menu Produtos")]
+        public void EntaoEuNaoDevoVisualizarOMenuProdutos()
+        {
+            Thread.Sleep(1000);
+            Assert.IsTrue(BrowserFactory.Driver.FindElements(By.XPath("//p[text()='Produtos']")).Count == 0, "Menu Produtos, visível na página");
+        }
+        
 
 		[When(@"eu clico no produto ""(.*)""")]
 		public void QuandoEuClicoNoProduto(string prod)
@@ -38,7 +44,14 @@ namespace Sanofi___Selenium.steps
 
 		}
 
-		[When(@"eu clico na Substância ""(.*)""")]
+        [When(@"eu clico em Categorias ""(.*)""")]
+        public void QuandoEuClicoEmCategorias(string categ)
+        {            
+            App.JClick(By.XPath("//h2[@class='c-text--h3 c-list-mestre-detail__subtitulo-left']//a[normalize-space()='" + categ + "']"));
+        }
+
+
+        [When(@"eu clico na Substância ""(.*)""")]
 		public void QuandoEuClicoNaSubstancia(string subst)
 		{
 			App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("//a[contains(@href,'" + subst + "')]")));
@@ -61,20 +74,7 @@ namespace Sanofi___Selenium.steps
 
 		}
 
-		[Then(@"eu devo ser direcionado para página de Contraceptivos")]
-		public void EntaoEuDevoSerDirecionadoParaPaginaDeContraceptivos()
-		{
-			App.CheckAtualPage("https://stg-cd.sanoficonecta.com.br/produtos/vacinas");
-
-		}
-
-		[Then(@"eu devo ser direcionado para página de detalhes do produto ""(.*)""")]
-		public void EntaoEuDevoSerDirecionadoParaPaginaDeDetalhesDoProduto(string prod)
-		{
-			App.CheckAtualPage("https://stg-cd.sanoficonecta.com.br/produtos/contraceptivos/" + prod);
-		}
-
-		[Then(@"eu devo ser direcionado para página de Tags Substancias ""(.*)""")]
+        [Then(@"eu devo ser direcionado para página de Tags Substancias ""(.*)""")]
 		public void EntaoEuDevoSerDirecionadoParaPaginaDeTagsSubstancias(string subst)
 		{
 			App.CheckAtualPage("https://stg-cd.sanoficonecta.com.br/Tags?tag=" + subst + "&type=substance");
@@ -96,13 +96,13 @@ namespace Sanofi___Selenium.steps
 		[When(@"eu clico em Filtro")]
 		public void QuandoEuClicoEmFiltro()
 		{
-			App.JClick(BasePage.ProdutosPage.Filtro);
+			App.JClick(BasePage.ProdutosPage.Filtro, false);
 		}
 
 		[Then(@"o modal Filtrar se expande")]
 		public void EntaoOModalFiltrarSeExpande()
 		{
-			string ModalFiltrar = App.WaitText("//h4[@class='c-text--h4 c-text--bold c-text--text-left']", "Filtrar");
+			string ModalFiltrar = App.WaitText("//h4[normalize-space()='Filtrar']", "Filtrar");
 			Asserts.VerificarString("Filtrar", ModalFiltrar);
 		}
 
@@ -111,25 +111,60 @@ namespace Sanofi___Selenium.steps
 		{
 			App.Click(BasePage.ProdutosPage.BtnAplicarFiltro);
 		}
+        [When(@"eu clico no filtro ""(.*)""")]
+        public void QuandoEuClicoNoFiltro(string filtro)
+        {
+            App.JClick(By.XPath("//label[text()='" + filtro + "']/following-sibling::div"));
+        }
 
-		[Then(@"eu devo visualizar a lista de todos os Produtos de A-Z")]
+       
+        [Then(@"eu devo visualizar os Produtos ""(.*)""")]
+        public void EntaoEuDevoVisualizarOsProdutos(string prod)
+        {
+            string[] lista = prod.Split(',');
+
+            // App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//div[contains(@class,'modal-search__category modal-search--no-padding')]/div[text()='" + list + "']")));
+
+            App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//div[@class='card-packing__bottom']")));
+            IList<IWebElement> Titlelist = BrowserFactory.Driver.FindElements(By.XPath("//div[@class='card-packing__bottom']"));
+
+            string palavra1, palavra2;
+
+            Assert.AreEqual(lista.Length, Titlelist.Count);
+            for (int i = 0; i < lista.Length; i++)
+            {
+                palavra1 = lista[i];
+                palavra2 = Titlelist[i].Text;
+                Assert.AreEqual(palavra1, palavra2);
+                Thread.Sleep(1000);
+            }
+        }
+
+        [Then(@"eu devo visualizar a lista de todos os Produtos de A-Z")]
 		public void EntaoEuDevoVisualizarAListaDeTodosOsProdutosDeA_Z()
 		{
 			string lista = App.WaitText("//h4[@class='c-text c-text--h5 c-text--bold c-text--cinza-leve packing-list-a-z']", "DE A-Z");
 			Asserts.VerificarString("DE A-Z", lista);
 		}
 
-		[When(@"eu clico em Compartilhar Produtos")]
-		public void QuandoEuClicoEmCompartilharProdutos()
-		{
-			App.Click(BasePage.ProdutosPage.Compartilhar);
-		}
+        [When(@"eu clico em baixar ""(.*)""")]
+        public void QuandoEuClicoEmBaixar(string bula)
+        {
+            App.JClick(By.XPath("//a[contains(text(),'" + bula + "')]"));
+        }
+        [When(@"eu clico no ícone da bula")]
+        public void QuandoEuClicoNoIconeDaBula()
+        {
+            App.JClick(BasePage.ProdutosPage.bulaIcone, false);
+        }
+        [When(@"eu clico em fazer download da ""(.*)""")]
+        public void QuandoEuClicoEmFazerDownloadDa(string bula)
+        {
+            App.JClick(By.XPath("//span[contains(text(),'" + bula + "')]/following-sibling::i"));
+            
+        }
 
-		[When(@"eu clico em Favoritos do Produto")]
-		public void QuandoEuClicoEmFavoritosDoProduto()
-		{
-			App.Click(BasePage.ProdutosPage.Salvar);
-		}
 
-	}
+
+    }
 }

@@ -116,11 +116,11 @@ namespace Sanofi___Selenium.steps
 		[When(@"eu clico em Favoritos")]
 		public void QuandoEuClicoEmFavoritos()
 		{
-			App.JClick(BasePage.ArtigoPage.Favoritos);
-			Thread.Sleep(TimeSpan.FromSeconds(8));
-		}
+            App.JClick(BasePage.ArtigoPage.Favoritos,false);
+            Thread.Sleep(TimeSpan.FromSeconds(5));
+        }
 
-		[Then(@"devo ver essa mensagem ""(.*)""")]
+        [Then(@"devo ver essa mensagem ""(.*)""")]
 		public void EntaoDevoVerEssaMensagem(string p0)
 		{
 			string mensagem = App.GetTextBy(BasePage.ArtigoPage.Mensagem);
@@ -150,7 +150,7 @@ namespace Sanofi___Selenium.steps
 		[When(@"eu clico em Compartilhar")]
 		public void QuandoEuClicoEmCompartilhar()
 		{
-			App.JClick(BasePage.ArtigoPage.Compartilhar);
+			App.JClick(BasePage.ArtigoPage.Compartilhar, false);
 		}
 
 		[Then(@"devo ver os links ""(.*)""")]

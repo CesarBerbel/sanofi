@@ -19,12 +19,6 @@ namespace Sanofi___Selenium.steps
 
         }
 
-        [When(@"eu clico em Compartilhar treinamento")]
-        public void QuandoEuClicoEmCompartilharTreinamento()
-        {
-            App.JClick(BasePage.TreinamentosPage.compartilhar);
-        }
-
         [Then(@"eu devo ser direcionado para página de treinamentos")]
         public void EntaoEuDevoSerDirecionadoParaPaginaDeTreinamentos()
         {
@@ -155,13 +149,20 @@ namespace Sanofi___Selenium.steps
             App.Click(BasePage.TreinamentosPage.btnProximaPergunta);
         }
 
-        [Then(@"eu devo visualizar o certificado em outra janela")]
-        public void EntaoEuDevoVisualizarOCertificadoEmOutraJanela()
+        //[Then(@"eu devo visualizar o certificado em outra janela")]
+        //public void EntaoEuDevoVisualizarOCertificadoEmOutraJanela()
+        //{
+        //    BrowserFactory.Driver.SwitchTo().Window(BrowserFactory.Driver.WindowHandles[1]);
+            
+        //    Assert.IsTrue(BrowserFactory.Driver.Url.Contains(".pdf"));
+        //}
+        [Then(@"eu devo visualizar o arquivo ""(.*)"" em outra janela")]
+        public void EntaoEuDevoVisualizarOArquivoEmOutraJanela(string arq)
         {
             BrowserFactory.Driver.SwitchTo().Window(BrowserFactory.Driver.WindowHandles[1]);
+            Assert.IsTrue(BrowserFactory.Driver.Url.Contains( arq ));
+            BrowserFactory.Driver.SwitchTo().Window(BrowserFactory.Driver.WindowHandles[0]);
 
-
-            Assert.IsTrue(BrowserFactory.Driver.Url.Contains(".pdf"));
         }
 
         [When(@"eu clico em fechar")]

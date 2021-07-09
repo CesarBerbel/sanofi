@@ -54,7 +54,7 @@ Quando eu preencho o campo Novo email com "dentista@servidor.com"
 E clico em Habilitar novo email 
 Entao eu devo ver a tela de envio de senha
 
-# Corrigido 
+ 
 Cenario: Tentar alterar email de recuperacao de senha utilizando Email invalido
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
@@ -66,8 +66,8 @@ E preencho o campo Número do registro com "123456"
 E clico em Prosseguir
 Entao eu devo ver a tela de envio de senha
 Dado que eu clique em Não tenho mais acesso a este email
-E seja exibido o final do numero do telefone "5507"
-Quando eu preencho o campo Celular com "71987165507"
+E seja exibido o final do numero do telefone "2222"
+Quando eu preencho o campo Celular com "22222222222"
 Quando eu preencho o campo Novo email com "abc123.com"
 E clico em Habilitar novo email
 Entao devo ver as mensagens de erro do Login "Email inválido"

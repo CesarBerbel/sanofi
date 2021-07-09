@@ -8,23 +8,23 @@ Cenario: Logar no sistema com Número do registro
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 E clico em Entrar
-Quando escolho o Estado "TO"
-E preencho o campo Número do registro com "288"
+Quando escolho o Estado "BA"
+E preencho o campo Número do registro com "4163"
 E preencho o campo Senha com "123456"
 E clico em Logar
 Então eu devo ser direcionado para página de boas vindas
-E devo ver meu nome "Abeneci Povoa" no menu profile 
+E devo ver meu nome "Doctor" no menu profile 
  
 Cenario: Realizar Login no sistema utilizando Email
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 E clico em Entrar
 Quando Eu escolho o login por email
-E preencho o campo Email com "medico@servidor.com"
+E preencho o campo Email com "medico04@teste.com "
 E preencho o campo Senha com "123456"
 E clico em Logar
 Então eu devo ser direcionado para página de boas vindas
-E devo ver meu nome "Abeneci Povoa" no menu profile 
+E devo ver meu nome "Doctor" no menu profile 
 Dado eu clico no menu profile logado para expandir
 Quando eu clico em Encerrar Sessao
 Entao eu devo ser direcionado para Home deslogada

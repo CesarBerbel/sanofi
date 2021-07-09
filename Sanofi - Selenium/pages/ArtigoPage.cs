@@ -5,12 +5,11 @@ namespace Sanofi___Selenium.pages
 {
 	public class ArtigoPage
 	{
-
-		public By Favoritos = By.XPath("//div[@class='c-hero__icons']//i");
-
-		public By Compartilhar = By.XPath("//div[@class='c-hero__icons']//i[2]");
-
-		public By Mensagem = By.XPath("//*[@id='vue - app']/div/div[6]/div/div/div/span[1]");
+       public By Favoritos = By.XPath("//i[@class='icon icon-favorite-off']");
+        
+       public By Compartilhar = By.XPath("//i[@class='icon icon-share']");
+        
+       public By Mensagem = By.XPath("//*[@id='vue - app']/div/div[6]/div/div/div/span[1]");
 
 		public By ItensSalvoLink = By.XPath("//a[@class='c-text menu-profile__panel-item menu-profile__panel-item--link menu-profile__panel-item--text-left']");
 

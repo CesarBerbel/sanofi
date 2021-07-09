@@ -16,7 +16,7 @@ namespace Sanofi___Selenium.pages
 
         public By EmailAlterar = By.Name("email");
 
-        public By AlterarSenha = By.XPath("//button[@class='c-my-profile__button']");
+        public By AlterarSenha = By.XPath("//button[normalize-space()='Alterar senha']");
 
         public By NovaSenha = By.Name("new_password");
 
@@ -32,7 +32,16 @@ namespace Sanofi___Selenium.pages
 
         public By BtnPersonalizar = By.XPath("//button[@class='c-base-modal-content__button']");
 
+        public By empresaOndeTrabalha = By.Id("workplacetype");
 
+        //public By cidade = By.XPath("//input[@nome='dropdown']");
+        public By cidade = By.XPath("//div[@name='Cidade']//div[@class='input-wrapper']//input");
+
+        
+
+        public By cidadeList = By.XPath("//div[@class='dropdown-item c-text c-text--h4']");
+        
+        public By localOndeTrabalha = By.XPath("//input[@placeholder='Local onde trabalha']");
 
 
     }

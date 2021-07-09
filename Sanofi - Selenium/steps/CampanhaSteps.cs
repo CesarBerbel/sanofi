@@ -36,19 +36,7 @@ namespace Sanofi___Selenium.steps
 			mensagem = mensagem.Remove(4, 2);
 			Asserts.VerificarString(msg, mensagem, true);
 		}
-
-		[When(@"eu clico em Compartilhar Campanha")]
-		public void QuandoEuClicoEmCompartilharCampanha()
-		{
-			App.Click(BasePage.CampanhasPage.Compartilhar);
-		}
-
-		[When(@"eu clico em Favoritos da Campanha")]
-		public void QuandoEuClicoEmFavoritosDaCampanha()
-		{
-			App.JClick(BasePage.CampanhasPage.Salvar);
-		}
-
+        		
 		[Given(@"eu clico no menu profile para expandir em Campanha")]
 		public void DadoEuClicoNoMenuProfileParaExpandirEmCampanha()
 		{
@@ -58,10 +46,10 @@ namespace Sanofi___Selenium.steps
 		[Then(@"devo ver a mensagem de salvamento ""(.*)""")]
 		public void EntaoDevoVerAMensagemDeSalvamento(string msg)
 		{
-			//App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("//div[@class='c-drawer c-drawer--fit-content']")));
+			//App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("//div[@class='c-drawer c-drawer--hidden']")));
+            App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("//span[@class='c-text c-text--branco']")));
 
-			App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("//div[@class='c-drawer c-drawer--hidden']")));
-		}
+        }
 
-	}
+    }
 }

@@ -29,8 +29,11 @@ E eu clico em Prosseguir
 Entao eu devo ser direcionado para página de validacao
 Quando escolho tipo de HCP "Dentista (CRO)"
 E escolho o Estado "BA"
-E preencho o campo do registro com "102030"
-E preencho o Email com "mariadentista@teste.com"
+E preencho o campo do registro com "6666666"
+E preencho o Email com "dentista06@teste.com"
+E Eu preencho o campo Nome com "Dentista"
+E preencho o campo Sobrenome com "Six"
+E eu preencho o Celular com "71987165507"
 E marco a opcao Li e concordo com os Termos e Condições.
 E clico em Finalizar Validacao
 Entao devo ver a mensagem da campanha "Olá,Esse conteúdo é exclusivo para Médico e Farmacêutico."
@@ -45,6 +48,9 @@ Quando escolho tipo de HCP "Dentista (CRO)"
 E escolho o Estado "BA"
 E preencho o campo Número do registro com registro aleatório
 E preencho o Email com email aleatório
+E Eu preencho o campo Nome com "Farma"
+E preencho o campo Sobrenome com "Four"
+E eu preencho o Celular com "71987165507"
 E marco a opcao Li e concordo com os Termos e Condições.
 E clico em Finalizar Validacao
 E clico em Deixar para depois
@@ -64,7 +70,7 @@ E clico em Logar
 Então devo ver meu nome "farmaceutico teste" no menu profile
 Quando eu acesso a campanha "https://stg-cd.sanoficonecta.com.br/farmaceuticos"
 Entao eu visualizo a campanha "https://stg-cd.sanoficonecta.com.br/farmaceuticos"  
-Quando eu clico em Favoritos da Campanha
+Quando eu clico em Favoritos
 Entao devo ver a mensagem de salvamento "Campanha adicionada à sua área pessoal" 
 Dado eu clico no menu profile para expandir em Campanha
 Quando eu clico em Itens Salvos
@@ -83,7 +89,7 @@ E clico em Logar
 Então devo ver meu nome "farmaceutico teste" no menu profile
 Quando eu acesso a campanha "https://stg-cd.sanoficonecta.com.br/campanha/pasteur"
 Entao eu visualizo a campanha "https://stg-cd.sanoficonecta.com.br/campanha/pasteur"  
-Quando eu clico em Compartilhar Campanha
+Quando eu clico em Compartilhar 
 Entao devo ver os links "Whatsapp,Facebook,LinkedIn,Copiar link"
 
 #Cenario: Tentar adicionar Campanha aos favoritos sem estar logado no sistema

@@ -92,7 +92,7 @@ namespace Sanofi___Selenium.steps
         [When(@"eu clico em Continuar")]
         public void QuandoEuClicoEmContinuar()
         {
-			App.Click(BasePage.LoginModal.BotaoLogar);
+			App.JClick(BasePage.LoginModal.BotaoLogar);
 		}
 
 
@@ -145,8 +145,9 @@ namespace Sanofi___Selenium.steps
 		[Then(@"eu devo ser direcionado para página para validar o email")]
 		public void EntaoEuDevoSerDirecionadoParaPaginaParaValidarOEmail()
 		{
-			string msg = App.GetTextBy(By.XPath("//div[@class='c-text c-text--h3 c-modal-sf-hcp__title']"));
-			Asserts.VerificarString("Olá, identificamos que você já tem uma conta", msg);
+			string msg = App.GetTextBy(By.XPath("//strong[normalize-space()='Olá, identificamos que você já tem uma conta']"));
+
+            Asserts.VerificarString("Olá, identificamos que você já tem uma conta", msg);
 		}
 
 

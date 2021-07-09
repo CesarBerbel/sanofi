@@ -8,8 +8,6 @@ namespace Sanofi___Selenium.pages
 		
 		public By menuTreinamento = By.XPath("//i[@class='icon menu-profile__indicator icon-chevron-aberto']//following-sibling::div//a[text()='Treinamentos']");
 
-        public By compartilhar = By.XPath("//i[@class='icon icon-share']");
-
         public By certificado = By.XPath("//a[@target='_black']");
 
         public By btnProximo = By.XPath("//button[@class='c-survey__button c-survey__button--active']");
@@ -28,13 +26,6 @@ namespace Sanofi___Selenium.pages
         public By btnProximaPergunta = By.XPath("//button[@class='c-quizz-form-container-vert__button']");
 
       //  public By bula = By.XPath("//a[text()='Clique aqui!']");
-
-        
-
-
-
-
-
 
     }
 }

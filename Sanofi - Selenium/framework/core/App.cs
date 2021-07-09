@@ -1,6 +1,7 @@
 ﻿using AventStack.ExtentReports;
 using AventStack.ExtentReports.Gherkin.Model;
 using AventStack.ExtentReports.Reporter;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using Sanofi___Selenium.framework.Pages;
@@ -17,9 +18,9 @@ namespace Sanofi___Selenium.framework.core
 
 		public void Initalize()
 		{
-           BrowserFactory.InitBrowser("BrowserStack");
+          BrowserFactory.InitBrowser("BrowserStack");
 
-           // BrowserFactory.InitBrowser("Chrome");
+          // BrowserFactory.InitBrowser("Chrome");
           _espera = new WebDriverWait(BrowserFactory.Driver, TimeSpan.FromSeconds(60));	
 		}
 
@@ -45,6 +46,10 @@ namespace Sanofi___Selenium.framework.core
 				_meliante = _espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(by));
 				_meliante = _espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(by));
 			}
+            else
+            {
+                _meliante = BrowserFactory.Driver.FindElement(by);
+            }
 
 			Thread.Sleep(TimeSpan.FromSeconds(2));
 			IJavaScriptExecutor executor = (IJavaScriptExecutor)BrowserFactory.Driver;
@@ -77,9 +82,9 @@ namespace Sanofi___Selenium.framework.core
 			BrowserFactory.CloseAllDrivers();
 		}
 
-		public bool CheckAtualPage(string url)
+		public void CheckAtualPage(string url)
 		{
-			return (BrowserFactory.Driver.Url == url);
+			Assert.IsTrue(BrowserFactory.Driver.Url == url);
 		}
 
 		public void SetWaitTimeOut(int tempo)

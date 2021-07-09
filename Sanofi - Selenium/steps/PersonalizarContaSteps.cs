@@ -1,10 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using Sanofi___Selenium.framework.core;
 using Sanofi___Selenium.framework.Pages;
 using Sanofi___Selenium.framework.steps;
 using System;
+using System.Collections.Generic;
 using System.Threading;
 using TechTalk.SpecFlow;
 
@@ -110,11 +112,8 @@ namespace Sanofi___Selenium.steps
         [Then(@"devo visualizar a mensagem ""(.*)""")]
         public void EntaoDevoVisualizarAMensagem(string msg)
         {
-
             string mensagem = App.WaitText("//span[@class='c-text c-text--branco']", msg);
             Asserts.VerificarString(msg, mensagem);
-
-          
         }
 
 
@@ -223,7 +222,85 @@ namespace Sanofi___Selenium.steps
 
         }
 
+        [When(@"seleciono ""(.*)"" em Empresa onde trabalha")]
+        public void QuandoSelecionoEmEmpresaOndeTrabalha(string empresa)
+        {
+            App.SelecionarDropDown(BasePage.PersonalizarConta.empresaOndeTrabalha, empresa);
 
+        }
+
+        [When(@"preencho o campo Nome do local onde trabalha com ""(.*)""")]
+        public void QuandoPreenchoOCampoNomeDoLocalOndeTrabalhaCom(string local)
+        {
+            App.EnterTextInto(BasePage.PersonalizarConta.localOndeTrabalha, local);
+        }
+
+        [When(@"preencho a cidade com ""(.*)""")]
+        public void QuandoPreenchoACidadeCom(string cid)
+        {
+            App.EnterTextInto(BasePage.PersonalizarConta.cidade, cid);
+        }
+
+        [When(@"seleciono a cidade ""(.*)""")]
+        public void QuandoSelecionoACidade(string cid)
+        {
+            // App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath("//div[@class='dropdown-content']/div[contains(text(),'" + cid + "')]")));
+
+            Actions act = new Actions(BrowserFactory.Driver);
+           // act.MoveToElement(BrowserFactory.Driver.FindElement(BasePage.PersonalizarConta.cidade)).Build().Perform();
+            act.Click(BrowserFactory.Driver.FindElement(BasePage.PersonalizarConta.cidade)).Build().Perform();
+
+            //App.JClick(BasePage.PersonalizarConta.cidade);
+
+          //  BrowserFactory.Driver.FindElement(By.XPath("//div[@class='dropdown-content']/div[contains(text(),'" + cid + "')]")).Click();
+
+
+        }
+
+        [Then(@"eu não devo ver o campo Cidade")]
+        public void EntaoEuNaoDevoVerOCampoCidade()
+        {
+            Assert.IsTrue(BrowserFactory.Driver.FindElements(By.XPath("//span[text()='Cidade']")).Count == 0, "Campo Cidade visível na tela");
+        }
+
+        [Then(@"devo ver a mensagem de campo obrigatorio ""(.*)""")]
+        public void EntaoDevoVerAMensagemDeCampoObrigatorio(string msgErro)
+        {
+            string mensagem = App.WaitText("//span[@class='c-my-profile__save-container--error']", msgErro);
+            Asserts.VerificarString(msgErro, mensagem);
+        }
+
+        [Then(@"devo ver a mensagem de cidade obrigatória ""(.*)""")]
+        public void EntaoDevoVerAMensagemDeCidadeObrigatoria(string msg)
+        {
+            string mensagem = App.WaitText("//span[text()='Cidade inválida']", msg);
+            Asserts.VerificarString(msg, mensagem);
+        }
+
+        [Then(@"devo ver a mensagem de Local obrigatório ""(.*)""")]
+        public void EntaoDevoVerAMensagemDeLocalObrigatorio(string msg)
+        {
+            string mensagem = App.WaitText("//span[text()='Local inválido']", msg);
+            Asserts.VerificarString(msg, mensagem);
+
+
+            //string[] mensagens = msgs.Split(',');
+
+            //App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//div[contains(@class,'grid-md-10 grid-sm-4 c-pb-0 c-pl-0 c-pr-0 c-pt-0')]")));
+
+            //IList<IWebElement> ErrorMsgs = BrowserFactory.Driver.FindElements(By.XPath("//div[contains(@class,'grid-md-10 grid-sm-4 c-pb-0 c-pl-0 c-pr-0 c-pt-0')]"));
+
+            //string palavra1, palavra2;
+
+            //Assert.AreEqual(mensagens.Length, ErrorMsgs.Count);
+            //for (int i = 0; i < mensagens.Length; i++)
+            //{
+            //    palavra1 = mensagens[i];
+            //    palavra2 = ErrorMsgs[i].Text;
+            //    Assert.AreEqual(palavra1, palavra2);
+            //}
+        }
 
     }
+    
 }

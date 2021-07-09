@@ -12,14 +12,15 @@ E eu clico em Prosseguir
 Entao eu devo ser direcionado para página de validacao
 Quando escolho tipo de HCP "Dentista (CRO)"
 E escolho o Estado "BA"
-E preencho o campo do registro com "21660"
-E preencho o Email com "jose123@teste.com"
+E preencho o campo do registro com "6666666"
+E preencho o Email com "dentista06@teste.com"
+E Eu preencho o campo Nome com "Dentista"
+E preencho o campo Sobrenome com "Six"
+E eu preencho o Celular com "71987165507"
 E marco a opcao Li e concordo com os Termos e Condições.
 E clico em Finalizar Validacao
-Quando preencho o campo de validação de Email com "dentista@servidor.com"
-E clico em Prosseguir
 E preencho o campo Adicionar Senha com "123456"
-E clico em Finalizar
+E clico em Finalizar Validacao
 Entao eu visualizo o artigo "https://stg-cd.sanoficonecta.com.br/artigos/boletim-informacoes-medicas-servico-de-informacao-sobre-vacinacao-siv" 
 
 Cenario: Acessar artigo exclusivo, utilizando perfil sem permissão
@@ -29,9 +30,12 @@ Quando eu clico em SIM
 E eu clico em Prosseguir
 Entao eu devo ser direcionado para página de validacao 
 Quando escolho tipo de HCP "Farmacêutico (CRF)"
-E escolho o Estado "CE"
-E preencho o campo do registro com "19861"
-E preencho o Email com "farma_ce@teste.com"
+E escolho o Estado "BA"
+E preencho o campo do registro com "4444444"
+E preencho o Email com "farma04@teste.com"
+E Eu preencho o campo Nome com "Farma"
+E preencho o campo Sobrenome com "Four"
+E eu preencho o Celular com "71987165507"
 E marco a opcao Li e concordo com os Termos e Condições.
 E clico em Finalizar Validacao
 Entao devo ver a mensagem do artigo "Olá,Esse conteúdo é exclusivo para Médico."
@@ -77,9 +81,12 @@ Quando eu clico em SIM
 E eu clico em Prosseguir
 Entao eu devo ser direcionado para página de validacao 
 Quando escolho tipo de HCP "Farmacêutico (CRF)"
-E escolho o Estado "CE"
-E preencho o campo do registro com "19861"
-E preencho o Email com "farma_ce@teste.com"
+E escolho o Estado "BA"
+E preencho o campo do registro com "4444444"
+E preencho o Email com "farma04@teste.com"
+E Eu preencho o campo Nome com "Farma"
+E preencho o campo Sobrenome com "Four"
+E eu preencho o Celular com "71987165507"
 E marco a opcao Li e concordo com os Termos e Condições.
 E clico em Finalizar Validacao
 Entao devo ver a mensagem do artigo "Olá,Esse conteúdo é exclusivo para Médico."

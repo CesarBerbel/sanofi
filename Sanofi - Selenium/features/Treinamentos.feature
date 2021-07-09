@@ -39,7 +39,7 @@ Quando eu clico em Proxima pergunta
 Então devo ver a mensagem: "Você completou o Módulo Aula 01"
 Quando eu clico em fechar
 Então devo ver a mensagem de conclusão de curso "Sucesso! Você concluiu o curso. Faça o download do seu certificado no topo da página."
-
+#Bug SANCD-1076
 Cenario: Realizar Treinamento com perfil sem permissão
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
@@ -61,9 +61,12 @@ Quando eu clico em SIM
 E eu clico em Prosseguir
 Entao eu devo ser direcionado para página de validacao 
 Quando escolho tipo de HCP "Farmacêutico (CRF)"
-E escolho o Estado "CE"
-E preencho o campo do registro com "19861"
-E preencho o Email com "farma_ce@teste.com"
+E escolho o Estado "BA"
+E preencho o campo do registro com "4444444"
+E preencho o Email com "farma04@teste.com"
+E Eu preencho o campo Nome com "Farma"
+E preencho o campo Sobrenome com "Four"
+E eu preencho o Celular com "71987165507"
 E marco a opcao Li e concordo com os Termos e Condições.
 E clico em Finalizar Validacao
 Entao devo ver a mensagem do artigo "Olá,Esse conteúdo é exclusivo para Médico."
@@ -132,22 +135,22 @@ Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 E clico em Entrar
 Quando Eu escolho o login por email
-E preencho o campo Email com "medico01@teste.com"
+E preencho o campo Email com "medico05@teste.com"
 E preencho o campo Senha com "123456"
 E clico em Logar
 Dado eu clico no menu profile Logado para expandir
 Quando eu clico em Treinamentos
 Então eu devo ser direcionado para página de treinamentos
-Quando eu acesso o Treinamento "https://stg-cd.sanoficonecta.com.br/treinamentos/crf/farmaceuticos"
+Quando eu acesso o Treinamento "https://stg-cd.sanoficonecta.com.br/treinamentos/automation/automation-test-crm"
 E clico em Fazer download do Certificado
-Então eu devo visualizar o certificado em outra janela
-
+Então eu devo visualizar o arquivo ".pdf" em outra janela
+# Bug: 7077  (Pq o teste só falhou no ultimo step, se não clicou no favorito?)
 Cenario: Adicionar e Retirar Treinamentos dos favoritos
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 E clico em Entrar
 Quando Eu escolho o login por email
-E preencho o campo Email com "medico@servidor.com"
+E preencho o campo Email com "medico05@teste.com"
 E preencho o campo Senha com "123456"
 E clico em Logar
 Dado eu clico no menu profile Logado para expandir
@@ -167,10 +170,10 @@ Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 E clico em Entrar
 Quando Eu escolho o login por email
-E preencho o campo Email com "medico@servidor.com"
+E preencho o campo Email com "medico05@teste.com"
 E preencho o campo Senha com "123456"
 E clico em Logar
 Dado eu clico no menu profile Logado para expandir
 Quando eu clico em Treinamentos
-E eu clico em Compartilhar treinamento
+E eu clico em Compartilhar 
 Entao devo ver os links "Whatsapp,Facebook,LinkedIn,Copiar link"

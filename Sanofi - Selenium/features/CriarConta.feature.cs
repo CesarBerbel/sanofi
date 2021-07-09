@@ -217,7 +217,7 @@ testRunner.When("escolho tipo de HCP \"Dentista (CRO)\"", ((string)(null)), ((Te
 testRunner.And("escolho o Estado \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 31
-testRunner.And("preencho o campo do registro com \"21660\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("preencho o campo do registro com \"1111111\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 32
 testRunner.And("preencho o Email com \"abcd@automacao.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -232,7 +232,7 @@ testRunner.And("eu clico em Continuar", ((string)(null)), ((TechTalk.SpecFlow.Ta
 testRunner.Then("eu devo ser direcionado para página para validar o email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 36
-testRunner.When("preencho o campo de validação de Email com \"dentista@servidor.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("preencho o campo de validação de Email com \"dentista01@teste.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 37
 testRunner.And("clico em Prosseguir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -244,7 +244,7 @@ testRunner.And("preencho o campo Adicionar Senha com \"123456\"", ((string)(null
 testRunner.And("clico em Finalizar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 40
-testRunner.Then("devo ver meu nome \"jose\" no menu profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
+testRunner.Then("devo ver meu nome \"Dentista\" no menu profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -475,10 +475,10 @@ testRunner.And("marco a opcao Li e concordo com os Termos e Condições.", ((str
 testRunner.And("eu clico em Continuar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 83
-testRunner.And("Eu preencho o campo Nome com \"Doctor Angry\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("Eu preencho o campo Nome com \"Dentist\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 84
-testRunner.And("preencho o campo Sobrenome com \"Birds\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("preencho o campo Sobrenome com \"AutoQA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 85
 testRunner.And("eu preencho o Celular com \"00000\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -537,7 +537,7 @@ testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((Tec
 testRunner.And("clico em Criar Conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 95
-testRunner.When("escolho tipo de HCP \"Farmaceutico (CRF)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("escolho tipo de HCP \"Nutricionista (CRN)\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 96
 testRunner.And("escolho o Estado \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -576,10 +576,10 @@ testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(nu
 testRunner.Then("eu devo ser direcionado para página de finalizacao de cadastro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Entao ");
 #line hidden
 #line 108
-testRunner.When("Eu preencho o campo Nome com \"Doctor Bob\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("Eu preencho o campo Nome com \"Nutri\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 109
-testRunner.And("preencho o campo Sobrenome com \"Esponja\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("preencho o campo Sobrenome com \"AutoQA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 110
 testRunner.And("eu preencho o Celular com \"79987165507\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");

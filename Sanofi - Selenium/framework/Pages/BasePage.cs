@@ -67,6 +67,14 @@ namespace Sanofi___Selenium.framework.Pages
         {
             get { return GetPage<Treinamentos>(); }
         }
+        public static BuscaPage BuscaPage
+        {
+            get { return GetPage<BuscaPage>(); }
+        }
+        public static CalendarioPage CalendarioPage
+        {
+            get { return GetPage<CalendarioPage>(); }
+        }
 
     }
 }

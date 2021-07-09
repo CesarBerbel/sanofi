@@ -131,10 +131,10 @@ testRunner.And("eu clico no menu profile para expandir", ((string)(null)), ((Tec
 testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 11
-testRunner.When("escolho o Estado \"TO\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
+testRunner.When("escolho o Estado \"BA\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 12
-testRunner.And("preencho o campo Número do registro com \"288\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("preencho o campo Número do registro com \"4163\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 13
 testRunner.And("preencho o campo Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -146,7 +146,7 @@ testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(nu
 testRunner.Then("eu devo ser direcionado para página de boas vindas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
 #line 16
-testRunner.And("devo ver meu nome \"Abeneci Povoa\" no menu profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("devo ver meu nome \"Doctor\" no menu profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -193,7 +193,7 @@ testRunner.And("clico em Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(n
 testRunner.When("Eu escolho o login por email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quando ");
 #line hidden
 #line 23
-testRunner.And("preencho o campo Email com \"medico@servidor.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("preencho o campo Email com \"medico04@teste.com \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 24
 testRunner.And("preencho o campo Senha com \"123456\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
@@ -205,7 +205,7 @@ testRunner.And("clico em Logar", ((string)(null)), ((TechTalk.SpecFlow.Table)(nu
 testRunner.Then("eu devo ser direcionado para página de boas vindas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
 #line 27
-testRunner.And("devo ver meu nome \"Abeneci Povoa\" no menu profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+testRunner.And("devo ver meu nome \"Doctor\" no menu profile", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line hidden
 #line 28
 testRunner.Given("eu clico no menu profile logado para expandir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");

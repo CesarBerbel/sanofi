@@ -28,16 +28,16 @@ E eu clico no menu profile para expandir
 E clico em Criar Conta
 Quando escolho tipo de HCP "Dentista (CRO)"
 E escolho o Estado "BA"
-E preencho o campo do registro com "21660"
+E preencho o campo do registro com "1111111"
 E preencho o Email com "abcd@automacao.com"
 E marco a opcao Li e concordo com os Termos e Condições.
 E eu clico em Continuar
 Entao eu devo ser direcionado para página para validar o email
-Quando preencho o campo de validação de Email com "dentista@servidor.com"
+Quando preencho o campo de validação de Email com "dentista01@teste.com"
 E clico em Prosseguir
 E preencho o campo Adicionar Senha com "123456"
 E clico em Finalizar
-Então devo ver meu nome "jose" no menu profile 
+Então devo ver meu nome "Dentista" no menu profile 
 
 Cenario: Criar Conta utilizando Email ja cadastrado
 Dado que eu acesse o sistema
@@ -80,8 +80,8 @@ E preencho o campo Número do registro com registro aleatório
 E preencho o Email com email aleatório
 E marco a opcao Li e concordo com os Termos e Condições.
 E eu clico em Continuar
-E Eu preencho o campo Nome com "Doctor Angry"
-E preencho o campo Sobrenome com "Birds"
+E Eu preencho o campo Nome com "Dentist"
+E preencho o campo Sobrenome com "AutoQA"
 E eu preencho o Celular com "00000"
 E preencho o campo Adicionar Senha com "123456"
 E preencho o campo Repetir Senha com "123456"
@@ -92,7 +92,7 @@ Cenario: Criar conta com usuario Validado (SoftLogin)
 Dado que eu acesse o sistema
 E eu clico no menu profile para expandir
 E clico em Criar Conta
-Quando escolho tipo de HCP "Farmaceutico (CRF)"
+Quando escolho tipo de HCP "Nutricionista (CRN)"
 E escolho o Estado "BA"
 E preencho o campo Número do registro com registro aleatório
 E preencho o Email com email aleatório
@@ -105,8 +105,8 @@ E clico em Criar conta
 E insiro o email aleatório
 E clico em Logar
 Entao eu devo ser direcionado para página de finalizacao de cadastro
-Quando Eu preencho o campo Nome com "Doctor Bob"
-E preencho o campo Sobrenome com "Esponja"
+Quando Eu preencho o campo Nome com "Nutri"
+E preencho o campo Sobrenome com "AutoQA"
 E eu preencho o Celular com "79987165507"
 E preencho o campo Adicionar Senha com "123456"
 E preencho o campo Repetir Senha com "123456"
