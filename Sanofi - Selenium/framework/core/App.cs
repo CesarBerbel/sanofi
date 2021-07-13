@@ -20,7 +20,7 @@ namespace Sanofi___Selenium.framework.core
 		{
           BrowserFactory.InitBrowser("BrowserStack");
 
-          // BrowserFactory.InitBrowser("Chrome");
+         //  BrowserFactory.InitBrowser("Chrome");
           _espera = new WebDriverWait(BrowserFactory.Driver, TimeSpan.FromSeconds(60));	
 		}
 

@@ -235,26 +235,16 @@ namespace Sanofi___Selenium.steps
             App.EnterTextInto(BasePage.PersonalizarConta.localOndeTrabalha, local);
         }
 
-        [When(@"preencho a cidade com ""(.*)""")]
-        public void QuandoPreenchoACidadeCom(string cid)
-        {
-            App.EnterTextInto(BasePage.PersonalizarConta.cidade, cid);
-        }
-
         [When(@"seleciono a cidade ""(.*)""")]
         public void QuandoSelecionoACidade(string cid)
         {
-            // App._espera.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath("//div[@class='dropdown-content']/div[contains(text(),'" + cid + "')]")));
-
-            Actions act = new Actions(BrowserFactory.Driver);
-           // act.MoveToElement(BrowserFactory.Driver.FindElement(BasePage.PersonalizarConta.cidade)).Build().Perform();
-            act.Click(BrowserFactory.Driver.FindElement(BasePage.PersonalizarConta.cidade)).Build().Perform();
-
-            //App.JClick(BasePage.PersonalizarConta.cidade);
-
-          //  BrowserFactory.Driver.FindElement(By.XPath("//div[@class='dropdown-content']/div[contains(text(),'" + cid + "')]")).Click();
-
-
+                       
+                Thread.Sleep(TimeSpan.FromMilliseconds(5000));
+                Actions act = new Actions(BrowserFactory.Driver);
+                act.MoveToElement(BrowserFactory.Driver.FindElement(BasePage.PersonalizarConta.cidade));
+                act.Click(BrowserFactory.Driver.FindElement(BasePage.PersonalizarConta.cidade));
+                act.Perform();
+                BrowserFactory.Driver.FindElement(By.XPath("//div[@class='dropdown-content']/div[contains(text(),'" + cid + "')]")).Click();
         }
 
         [Then(@"eu não devo ver o campo Cidade")]

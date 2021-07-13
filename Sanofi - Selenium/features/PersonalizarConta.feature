@@ -226,28 +226,28 @@ E seleciono em interesses "Aulas Médicas"
 E eu clico em Salvar
 Então devo visualizar a mensagem "Dados alterados com sucesso"
 
-#implementar seleção pelo Dropdown  (Cidade inválida pelo input Text)
-#Cenario: Alterar Cidade e Empresa onde trabalha
-#Dado que eu acesse o sistema
-#E eu clico no menu profile para expandir
-#E clico em Entrar
-#Quando Eu escolho o login por email
-#E preencho o campo Email com "farmaceutico01@teste.com"
-#E preencho o campo Senha com "123456"
-#E clico em Logar
-#Então eu devo ser direcionado para página de boas vindas
-#Dado eu clico no menu profile Logado para expandir
-#E eu clico em Meu Perfil
-#Então devo ser direcionado para pagina de Perfil
-#Quando eu clico em Minha conta 
-#E seleciono "Indiana" em Empresa onde trabalha
-#E preencho a cidade com "Cabixi - RO"
-#E eu clico em Salvar
-#Então devo visualizar a mensagem "Dados alterados com sucesso"
-#Quando seleciono "Moderna" em Empresa onde trabalha
-#E preencho a cidade com "Cacoal - RO"
-#E eu clico em Salvar
-#Então devo visualizar a mensagem "Dados alterados com sucesso"
+
+Cenario: Alterar Cidade e Empresa onde trabalha
+Dado que eu acesse o sistema
+E eu clico no menu profile para expandir
+E clico em Entrar
+Quando Eu escolho o login por email
+E preencho o campo Email com "farmaceutico01@teste.com"
+E preencho o campo Senha com "123456"
+E clico em Logar
+Então eu devo ser direcionado para página de boas vindas
+Dado eu clico no menu profile Logado para expandir
+E eu clico em Meu Perfil
+Então devo ser direcionado para pagina de Perfil
+Quando eu clico em Minha conta 
+E seleciono "Indiana" em Empresa onde trabalha
+E seleciono a cidade "Cabixi - RO"
+E eu clico em Salvar
+Então devo visualizar a mensagem "Dados alterados com sucesso"
+Quando seleciono "Moderna" em Empresa onde trabalha
+E seleciono a cidade "Cacoal - RO"
+E eu clico em Salvar
+Então devo visualizar a mensagem "Dados alterados com sucesso"
 
 Cenario: Selecionar "Não se Aplica" em Empresa onde trabalha
 Dado que eu acesse o sistema
@@ -265,47 +265,49 @@ Quando eu clico em Minha conta
 E seleciono "Não Se Aplica" em Empresa onde trabalha
 Então eu não devo ver o campo Cidade
 
-#implementar seleção pelo Dropdown  (Cidade inválida pelo input Text)
-#Cenario: Selecionar "Outra" em Empresa onde trabalha
-#Dado que eu acesse o sistema
-#E eu clico no menu profile para expandir
-#E clico em Entrar
-#Quando Eu escolho o login por email
-#E preencho o campo Email com "farmaceutico01@teste.com"
-#E preencho o campo Senha com "123456"
-#E clico em Logar
-#Então eu devo ser direcionado para página de boas vindas
-#Dado eu clico no menu profile Logado para expandir
-#E eu clico em Meu Perfil
-#Então devo ser direcionado para pagina de Perfil
-#Quando eu clico em Minha conta 
-#E seleciono "Outra" em Empresa onde trabalha
-#E preencho o campo Nome do local onde trabalha com "Aracaju"
-#E preencho a cidade com "Cabixi"
-#E eu clico em Salvar
-#Então devo visualizar a mensagem "Dados alterados com sucesso"
 
-#Aguardando correção do Bug 1040 para testar. Ou implementar seleção pelo Dropdown
-#Cenario: Validar a obrigatoriedade dos campos Cidade e Nome do local onde trabalha
-#Dado que eu acesse o sistema
-#E eu clico no menu profile para expandir
-#E clico em Entrar
-#Quando Eu escolho o login por email
-#E preencho o campo Email com "farma04@teste.com"
-#E preencho o campo Senha com "123456"
-#E clico em Logar
-#Então eu devo ser direcionado para página de boas vindas
-#Dado eu clico no menu profile Logado para expandir
-#E eu clico em Meu Perfil
-#Então devo ser direcionado para pagina de Perfil
-#Quando eu clico em Minha conta 
-#E seleciono "Outra" em Empresa onde trabalha
-##E eu clico em Salvar
-##Então devo ver a mensagem de cidade obrigatória "Cidade inválida"
-##Quando seleciono a cidade "Alta"  // Dropdown
-#Quando preencho a cidade com "Cacoal - RO"
-#E eu clico em Salvar
-#Então devo ver a mensagem de Local obrigatório "Local inválido"
+Cenario: Selecionar "Outra" em Empresa onde trabalha
+Dado que eu acesse o sistema
+E eu clico no menu profile para expandir
+E clico em Entrar
+Quando Eu escolho o login por email
+E preencho o campo Email com "farma04@teste.com"
+E preencho o campo Senha com "123456"
+E clico em Logar
+Então eu devo ser direcionado para página de boas vindas
+Dado eu clico no menu profile Logado para expandir
+E eu clico em Meu Perfil
+Então devo ser direcionado para pagina de Perfil
+Quando eu clico em Minha conta 
+E seleciono "Outra" em Empresa onde trabalha
+E preencho o campo Nome do local onde trabalha com "Aracaju"
+E seleciono a cidade "Alta Floresta"  
+E eu clico em Salvar
+Então devo visualizar a mensagem "Dados alterados com sucesso"
+Quando seleciono "Não Se Aplica" em Empresa onde trabalha
+E eu clico em Salvar
+Então devo visualizar a mensagem "Dados alterados com sucesso"
+
+
+Cenario: Validar a obrigatoriedade dos campos Cidade e Nome do local onde trabalha
+Dado que eu acesse o sistema
+E eu clico no menu profile para expandir
+E clico em Entrar
+Quando Eu escolho o login por email
+E preencho o campo Email com "farma03@teste.com"
+E preencho o campo Senha com "123456"
+E clico em Logar
+Então eu devo ser direcionado para página de boas vindas
+Dado eu clico no menu profile Logado para expandir
+E eu clico em Meu Perfil
+Então devo ser direcionado para pagina de Perfil
+Quando eu clico em Minha conta 
+E seleciono "Outra" em Empresa onde trabalha
+E eu clico em Salvar
+Então devo ver a mensagem de cidade obrigatória "Cidade inválida"
+Quando seleciono a cidade "Alta Floresta"  
+E eu clico em Salvar
+Então devo ver a mensagem de Local obrigatório "Local inválido"
 
 
 Cenario: Validar a obrigatoriedade do campo Empresa onde trabalha
@@ -324,6 +326,7 @@ Quando eu clico em Minha conta
 E eu altero o Celular para "(71) 9871-6550"
 E eu clico em Salvar
 Então devo ver a mensagem de campo obrigatorio "Selecione a empresa onde trabalha"
+
 
 
 #Cenario: Validar conteúdo das listas: Empresa e Cidade?

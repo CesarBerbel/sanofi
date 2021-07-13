@@ -34,10 +34,8 @@ namespace Sanofi___Selenium.pages
 
         public By empresaOndeTrabalha = By.Id("workplacetype");
 
-        //public By cidade = By.XPath("//input[@nome='dropdown']");
-        public By cidade = By.XPath("//div[@name='Cidade']//div[@class='input-wrapper']//input");
-
-        
+       public By cidade = By.XPath("//input[contains(@class,'dropdown-input input-wrapper__text-input c-text--h3')]");
+       // public By cidade = By.XPath("//div[@name='Cidade']//div[@class='input-wrapper']//input");
 
         public By cidadeList = By.XPath("//div[@class='dropdown-item c-text c-text--h4']");
         

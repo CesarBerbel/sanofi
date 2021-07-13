@@ -49,7 +49,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">09/07/2021 14:26:47</span>
+                    <span class="badge badge-primary">13/07/2021 12:05:03</span>
                 </a>
             </li>
         </ul>
@@ -118,19 +118,19 @@
 						</div>
 						<div class="open-test">
 							<div class="test-detail"> 
-								<p class="name">Evento</p> 
-								<p class="duration text-sm">0h:1m:5s+342ms</p> 
-								<span class="datetime">14:26:48 </span>
+								<p class="name">Personalizar Conta</p> 
+								<p class="duration text-sm">0h:0m:45s+580ms</p> 
+								<span class="datetime">12:05:03 </span>
 							</div>
 						</div>
 						<div class="test-contents d-none">
 							<div class="detail-head">
 								<div class="p-v-10 d-inline-block">	
 									<div class="info">
-										<h5 class="test-status text-pass">Evento</h5>
-										<span class='badge badge-success'>09/07/2021 14:26:48</span>
-										<span class='badge badge-danger'>09/07/2021 14:27:53</span>
-										<span class='badge badge-default'>0h:1m:5s+342ms</span>
+										<h5 class="test-status text-pass">Personalizar Conta</h5>
+										<span class='badge badge-success'>13/07/2021 12:05:03</span>
+										<span class='badge badge-danger'>13/07/2021 12:05:49</span>
+										<span class='badge badge-default'>0h:0m:45s+580ms</span>
 									</div>
 																	</div>
 							</div>
@@ -139,7 +139,7 @@
 	<div class="card">
 		<div class="card-header" role="tab">
 			<div class="card-title pl-3">
-				<div class="node">Scenario: Adicionar e Retirar Evento dos favoritos</div>
+				<div class="node">Scenario: Alterar Cidade e Empresa onde trabalha</div>
 				<div class="status-avatar float-left pass-bg">
 					<i class="fa fa-check text-white"></i>
 				</div>
@@ -175,7 +175,7 @@
                                 <span class="alert-icon pass-bg">
                                     <i class="fa fa-check text-white"></i>
                                 </span>
-                                <span>When preencho o campo Email com "testemedico@grr.la"</span>
+                                <span>When preencho o campo Email com "farmaceutico01@teste.com"</span>
                             </div>
                             <div class="d-flex align-items-center justify-content-start when" title="">
                                 <span class="alert-icon pass-bg">
@@ -193,31 +193,7 @@
                                 <span class="alert-icon pass-bg">
                                     <i class="fa fa-check text-white"></i>
                                 </span>
-                                <span>Then devo ver meu nome "Medico Teste" no menu profile</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-start when" title="">
-                                <span class="alert-icon pass-bg">
-                                    <i class="fa fa-check text-white"></i>
-                                </span>
-                                <span>When eu acesso o evento "https://stg-cd.sanoficonecta.com.br/eventos/hipoplay-now-hipotireoidismo-e-o-coracao"</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-start then" title="">
-                                <span class="alert-icon pass-bg">
-                                    <i class="fa fa-check text-white"></i>
-                                </span>
-                                <span>Then eu visualizo o evento "https://stg-cd.sanoficonecta.com.br/eventos/hipoplay-now-hipotireoidismo-e-o-coracao"</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-start when" title="">
-                                <span class="alert-icon pass-bg">
-                                    <i class="fa fa-check text-white"></i>
-                                </span>
-                                <span>When eu clico em Favoritos</span>
-                            </div>
-                            <div class="d-flex align-items-center justify-content-start then" title="">
-                                <span class="alert-icon pass-bg">
-                                    <i class="fa fa-check text-white"></i>
-                                </span>
-                                <span>Then devo ver a mensagem de salvamento "Evento adicionado à sua área pessoal"</span>
+                                <span>Then eu devo ser direcionado para página de boas vindas</span>
                             </div>
                             <div class="d-flex align-items-center justify-content-start given" title="">
                                 <span class="alert-icon pass-bg">
@@ -225,29 +201,71 @@
                                 </span>
                                 <span>Given eu clico no menu profile Logado para expandir</span>
                             </div>
-                            <div class="d-flex align-items-center justify-content-start when" title="">
+                            <div class="d-flex align-items-center justify-content-start given" title="">
                                 <span class="alert-icon pass-bg">
                                     <i class="fa fa-check text-white"></i>
                                 </span>
-                                <span>When eu clico em Itens Salvos</span>
+                                <span>Given eu clico em Meu Perfil</span>
                             </div>
                             <div class="d-flex align-items-center justify-content-start then" title="">
                                 <span class="alert-icon pass-bg">
                                     <i class="fa fa-check text-white"></i>
                                 </span>
-                                <span>Then eu devo ser direcionado para página de Favoritos</span>
+                                <span>Then devo ser direcionado para pagina de Perfil</span>
                             </div>
                             <div class="d-flex align-items-center justify-content-start when" title="">
                                 <span class="alert-icon pass-bg">
                                     <i class="fa fa-check text-white"></i>
                                 </span>
-                                <span>When eu clico em Remover item dos favoritos</span>
+                                <span>When eu clico em Minha conta</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When seleciono "Indiana" em Empresa onde trabalha</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When seleciono a cidade "Cabixi - RO"</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When eu clico em Salvar</span>
                             </div>
                             <div class="d-flex align-items-center justify-content-start then" title="">
                                 <span class="alert-icon pass-bg">
                                     <i class="fa fa-check text-white"></i>
                                 </span>
-                                <span>Then devo ver a mensagem de salvamento "Item removido da sua área pessoal"</span>
+                                <span>Then devo visualizar a mensagem "Dados alterados com sucesso"</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When seleciono "Moderna" em Empresa onde trabalha</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When seleciono a cidade "Cacoal - RO"</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When eu clico em Salvar</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start then" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Then devo visualizar a mensagem "Dados alterados com sucesso"</span>
                             </div>
                     </div>
 				</div>
@@ -328,7 +346,7 @@
 	                </div>
 	            </div>
 	            <div class="card-footer">
-	                <div><small data-tooltip='100%'><b>17</b> steps passed</small></div>
+	                <div><small data-tooltip='100%'><b>20</b> steps passed</small></div>
 	                <div>
 	                    <small data-tooltip='0%'><b>0</b> steps failed, 
 	                    <b data-tooltip='0%'>0</b> others
@@ -383,7 +401,7 @@
 	                <div class="media justify-content-between">
 						<div>
 							<h6 class="card-title">Start</h6>
-							<h6 class="font-weight-light">09/07/2021 14:26:47</h6>
+							<h6 class="font-weight-light">13/07/2021 12:05:03</h6>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -399,7 +417,7 @@
 	                <div class="media justify-content-between">
 						<div>
 							<h6 class="card-title">Duration</h6>
-							<h6 class="font-weight-light">00:01:05.5242984</h6>
+							<h6 class="font-weight-light">00:00:45.7779740</h6>
 							<span class="text-semibold text-danger font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -433,8 +451,8 @@
 		infoChild: 0,
 		debugChild: 0,
 		exceptionsChild: 0,
-		grandChildCount: 17,
-		passGrandChild: 17,
+		grandChildCount: 20,
+		passGrandChild: 20,
 		failGrandChild: 0,
 		fatalGrandChild: 0,
 		errorGrandChild: 0,
